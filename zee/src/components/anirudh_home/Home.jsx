@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "./Home.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import axios from 'axios';
 
 const slides1 = [
   {
@@ -42,15 +43,32 @@ const Home = () => {
     autoplaySpeed: 2000,
   };
 
+  const [carousel, setCarousel] = useState([]);
+  const [movies, setMovies] = useState([]);
+  const [dramas, setDramas] = useState([]);
+  const [webSeries, setWebSeries] = useState([]);
+  const [trending, setTrending] = useState([]);
+
+  const fetchdata1 = () => {
+    axios.get('https://mockdata.onrender.com/slide')
+    .then((res) => setCarousel(res.data))
+  }
+
+  useEffect(() => {
+    fetchdata1()
+  },[])
+
   return (
     <div>
       <div style={{ width: "90%", margin: "auto", marginTop: "32px" }}>
         <Slider {...settings}>
-          {slides1.map((item) => (
-            <img className="slide1" src={item.url} alt={item.alt} />
+          {carousel.map((item) => (
+            <img className="slide1" src={item.poster} alt={item.title} />
           ))}
         </Slider>
       </div>
+
+      
     </div>
   )
 }
