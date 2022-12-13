@@ -27,7 +27,7 @@ const Home = () => {
     gap: "20px",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -36,7 +36,7 @@ const Home = () => {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 750,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -81,7 +81,7 @@ const Home = () => {
         </Slider>
       </div>
 
-      <div style={{ width: "96%", margin: "auto", marginTop: "32px" }}>
+      <div className='trend-container' >
         <Slider {...settings2}>
           {trending.map((item) => {
             return (

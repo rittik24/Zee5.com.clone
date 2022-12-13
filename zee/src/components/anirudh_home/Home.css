@@ -3,15 +3,17 @@
     height: 500px;
 }
 
-/* .trend-container{
-    display: flex;
-    gap: 20px;
-    
-} */
+.trend-container{
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    margin: auto;
+    margin-top: 6rem;
+}
 
 .trend-products{
     width: 200px;
-    height: 220px;
+    height: 280px;
     
     padding: 10px;
     background-color: aliceblue;
@@ -24,6 +26,7 @@
 .trend-products img{
     width: 100%;
     height: 220px;
+    object-fit: cover;
 }
 
 .trend-title{
@@ -59,4 +62,20 @@
 
 .trend-products:hover .overview{
     transform: translateY(0);
+}
+
+@media screen and (max-width: 1200px) {
+    .trend-products{
+        padding: 10px 15px;
+    }
+
+    .slide1{
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .slide1{
+        height: 400px;
+    }
 }
