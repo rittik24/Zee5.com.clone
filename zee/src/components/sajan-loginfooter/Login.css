@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #11051C;
+}
+.main{
+    width: 27%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+    height: auto;
+    margin: auto;
+    margin-top: 70px;
+}
+.login-logo{
+    width: 69.5%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;  
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.welcome{
+    color: #cfc3ca;
+    /* font-weight: 370; */
+    margin-top: 15px;
+}
+.or{
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(40, 32, 48);
+    border: none;
+    padding: 10px 12px;
+}
+input{
+    outline: none;
+    color: white;
+    border: none;
+    background: none;
+}
