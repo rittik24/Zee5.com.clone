@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
  
   return (
-    <div  >u
+    <div >
       <div className='main'>
       <div><h4>Login to ZEE5</h4></div>
       <div ><p className='welcome'>Login to continue enjoying uninterrupted video and personalised experience.</p></div>
