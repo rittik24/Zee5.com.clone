@@ -6,7 +6,10 @@ import Login from "../components/sajan_loginfooter/Login";
 import CarouselDemo from "../components/anirudh_home/CarouselDemo";
 
 
-export default function AllRoutes(){
+import UserDashboard from "../components/aniket_details/UserDashboard";
+import AdminDashboard from "../components/aniket_details/AdminDashboard";
+
+export default function AllRoutes() {
     const [carousel, setCarousel] = useState([]);
     const [movies, setMovies] = useState([]);
     const [dramas, setDramas] = useState([]);
@@ -34,11 +37,13 @@ export default function AllRoutes(){
       fetchdata1()
     }, [])
 
-    return (
-        <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/login" element={<Login />}></Route>
-            <Route path="/Carousel/:Id" element={<CarouselDemo data={carousel} />}></Route>
-        </Routes>
-    )
+  return (
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/login" element={<Login />}></Route>
+      <Route path="/Carousel/:Id" element={<CarouselDemo data={carousel} />}></Route>
+      <Route path="/userdashboard" element={<UserDashboard />}></Route>
+      <Route path="/admindashboard" element={<AdminDashboard />}></Route>
+    </Routes>
+  );
 }
