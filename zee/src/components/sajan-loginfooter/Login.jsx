@@ -30,7 +30,7 @@ const Login = () => {
         </form>
         <div>
           <span>New to ZEE5?</span>
-          {/* <span><Link to="/Register">Register</Link> </span> */}
+          <span><Link to="/Register">Register</Link> </span>
         </div>
         
       </div>
