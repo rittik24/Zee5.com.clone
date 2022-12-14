@@ -55,7 +55,7 @@ function CarouselDemo({ data }) {
                 })}
             </div>
             <div className="det-part2">
-                <h1 style={{ textAlign: "left", paddingLeft: "35px", fontSize: "2rem" }}>Some More References</h1>
+                <h1 style={{ textAlign: "left", fontSize: "2rem" }}>Some More References</h1>
                 <div style={{ display: "flex", gap: "20px" }}>
                     <div style={{ marginTop: "15px" }}>
                         <div className='dummy-products'>
@@ -100,28 +100,7 @@ function CarouselDemo({ data }) {
                         </div>
                     </div>
                 </div>
-                <div style={{ display: "flex", gap: "20px" }}>
-                <div style={{ marginTop: "15px" }}>
-                        <div className='dummy-products'>
-                            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5233652/portrait/1920x77080f67bc07f5b44c590fba24494b638ac.jpg" alt="dum1" />
-                            <div className='overview'>
-                                <h2 className='trend-title'>Big Octopus</h2>
-                                <h3>Summary</h3>
-                                The owner of a small shop gets entangled in a conspiracy involving genetic experiments when he catches a tiny mutated octopus. Things go haywire when the mutations turn the octopus into a giant kaiju.
-                            </div>
-                        </div>
-                    </div>
-                    <div style={{ marginTop: "15px" }}>
-                        <div className='dummy-products'>
-                            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5258273/portrait/1920x7706a2fb486e5af4b5dae5d2481e4ddffdb.jpg" alt="dum1" />
-                            <div className='overview'>
-                                <h2 className='trend-title'>King of Serpent</h2>
-                                <h3>Summary</h3>
-                                When Chen Zheng and his friends go to King Serpent Island to collect data on snakes, they encounter evil snake catchers led by Jin Laosi. Will Chen Zheng be able to save the island and its snakes?
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
 
         </div>
