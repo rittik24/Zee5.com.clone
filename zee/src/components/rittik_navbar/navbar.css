@@ -25,7 +25,7 @@
 
 .navv-linkss img{
     width: 80px;
-    height:70px;
+    height:40px;
     margin-right: 20px;
 }
 .navv-linkss a{
@@ -35,8 +35,8 @@
 }
 
 .navv-linkss a h4{
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 200;
+    font-size: 15px;
 }
 .navv-linkss a h4:hover{
     border-bottom: 2px solid white;
@@ -70,7 +70,7 @@
     background-color: rgb(15,6,23);
     color: white;
     border: 1px solid white;
-    font-weight: 600;
+    font-weight: 200;
 }
 .login-button:hover{
     background-color: white;
@@ -84,7 +84,7 @@
     border-radius: 10px;
     background-color: rgb(92,22,149);
     color: white;
-    font-weight: 600;
+    font-weight: 400;
 }
 .navv-linkss i{
     color: white;

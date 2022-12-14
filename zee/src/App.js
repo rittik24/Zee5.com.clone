@@ -1,10 +1,12 @@
 import './App.css';
-import Home from './components/anirudh_home/Home';
+import Navbar from './components/rittik_navbar/Navbar';
+import AllRoutes from './routs/AllRoutes';
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Navbar/>
+     <AllRoutes/>
     </div>
   );
 }
