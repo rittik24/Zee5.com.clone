@@ -1,0 +1,84 @@
+:root{
+    --primary:hsla(282, 75%, 8%, 0.75);
+    --secondary:hsla(278, 85%, 3%, 200);
+}
+.headb{
+    background:linear-gradient(180deg, var(--primary),var(--secondary)), url("https://s3images.zee5.com/wp-content/uploads/sites/7/2021/09/Screenshot-2021-09-18-at-2.42.35-PM.jpg");
+
+    /* background:rgba(0,0,0,0.5) url("https://s3images.zee5.com/wp-content/uploads/sites/7/2021/09/Screenshot-2021-09-18-at-2.42.35-PM.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 120vh;
+    background-position: center;
+    /* background-blend-mode:darken;  */
+ 
+    width: 100%;
+    color: #ffffff;
+}
+.mainb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navb{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px ;
+    
+ 
+}
+.logob{
+    width: 50px;
+}
+.pln{
+    font-size: 50px;
+    font-weight: 400;
+}
+.mainbob{
+    border: 1px solid red;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+.boxb{
+    border: 6px solid blue;
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    padding: 30px;
+}
+.preb{
+    border: 3px solid #e6dde3;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 20px;
+
+}
+.preb>div{
+    border: 1px solid #9d0d72;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+
+}
+.applyb{
+    border: 1px solid #9d0d72;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+
+}
+.payb{
+    border: 3px solid red;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+.btnb{
+    background-color: #ffffff;
+    color: black;
+}

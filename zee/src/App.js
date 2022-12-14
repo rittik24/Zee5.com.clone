@@ -1,13 +1,12 @@
-import './App.css';
-import Home from './components/anirudh_home/Home';
-import Login from './components/sajan-loginfooter/Login';
-import Register from './components/sajan-loginfooter/Register';
+import "./App.css";
+import AllRoutes from './routs/AllRoutes';
+import Navbar from "./components/rittik_navbar/Navbar";
+
 function App() {
   return (
     <div className="App">
-      {/* <Home /> */}
-      {/* <Login/> */}
-      <Register/>
+      <Navbar />
+      <AllRoutes />
     </div>
   );
 }

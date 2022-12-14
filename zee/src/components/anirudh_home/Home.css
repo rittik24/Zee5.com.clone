@@ -1,5 +1,156 @@
 .slide1{
     width: 100%;
     height: 500px;
-    
+}
+
+.trend-container{
+    margin: 0 auto;
+    padding: 0;
+    width: 94%;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.trend-products{
+    width: 330px;
+    height: 330px;
+    cursor: pointer;
+    background-color: #333;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 10px;
+    /* padding: 0 10px; */
+}
+
+.trend-products img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+    /* object-fit: cover; */
+}
+
+.back{
+    display: flex;
+    justify-content: space-around;
+}
+
+.trend-title{
+    color: #111;
+    padding: 0.25rem 0.5rem;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.overview{
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.trend-products:hover .overview{
+    transform: translateY(0);
+}
+
+
+
+.latest1{
+    width: 280px;
+    height: 230px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.lang{
+    width: 280px;
+    height: 180px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.lang img{
+    width: 100%;
+    height: 100%;
+}
+
+.rent-watch{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.rent-watch img{
+    width: 100%;
+    height: 100%;
+}
+
+.det-container{
+    display: flex;
+    gap: 20px;
+}
+
+.dummy-products{
+    width: 280px;
+    height: 350px;
+    cursor: pointer;
+    background-color: #333;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.dummy-products img{
+    width: 100%;
+    height: 100%;
+}
+
+.dummy-products:hover .overview{
+    transform: translateY(0);
+}
+
+.det-part1{
+    width: 60%;
+}
+
+@media screen and (max-width: 1200px) {
+    .trend-products{
+        padding: 10px 15px;
+    }
+
+    .slide1{
+        height: 450px;
+    }
+
+    .det-part1{
+        width: 100%;
+    }
+
+    .det-part2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .slide1{
+        height: 400px;
+    }
 }
