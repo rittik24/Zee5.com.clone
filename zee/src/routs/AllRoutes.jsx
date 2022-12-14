@@ -5,6 +5,7 @@ import Home from "../components/anirudh_home/Home";
 import Login from "../components/sajan_loginfooter/Login";
 import CarouselDemo from "../components/anirudh_home/CarouselDemo";
 
+
 export default function AllRoutes(){
     const [carousel, setCarousel] = useState([]);
     const [movies, setMovies] = useState([]);

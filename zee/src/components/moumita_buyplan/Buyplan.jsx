@@ -2,7 +2,7 @@ import React from 'react'
 
 const Buyplan = () => {
   return (
-    <div>Buyplan</div>
+    <div>Buyplann</div>
   )
 }
 
