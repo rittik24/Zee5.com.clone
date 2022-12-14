@@ -81,15 +81,17 @@ const Home = () => {
         </Slider>
       </div>
 
+
       <div className='trend-container' >
+      <h1 style={{textAlign: "left"}}>Trending Near You</h1>
         <Slider {...settings2}>
           {trending.map((item) => {
             return (
               <div key={item.id} className='trend-products'>
                 <img src={item.poster} alt={item.title} />
-                <div className='trend-title'>
+                {/* <div className='trend-title'>
                   <h2>{item.title}</h2>
-                </div>
+                </div> */}
                 <div className='overview'>
                   <h3>Summary</h3>
                   {item.description}
