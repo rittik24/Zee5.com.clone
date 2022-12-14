@@ -7,6 +7,7 @@ import axios from 'axios';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Button } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 const latestHindi = [
   { id: 1, src: "https://akamaividz2.zee5.com/image/upload/w_522,h_294,c_scale,f_webp,q_auto:eco/resources/0-1-6z5267210/list/00000190fbb043458b1343a5bafa962771b4e7a1.jpg", alt: "Arjun Plans to Malign Risabh" },
@@ -145,7 +146,7 @@ const Home = () => {
       <div style={{ width: "96%", margin: "auto", marginTop: "32px" }}>
         <Slider {...settings1}>
           {carousel.map((item) => (
-            <img key={item.id} className="slide1" src={item.poster} alt={item.title} />
+            <Link to={`/Carousel/${item.id}`}><img key={item.id} className="slide1" src={item.poster} alt={item.title} /></Link>
           ))}
         </Slider>
       </div>
