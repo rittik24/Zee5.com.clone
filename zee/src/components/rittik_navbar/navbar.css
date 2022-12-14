@@ -1,0 +1,91 @@
+.navv {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: rgb(15,6,23);
+    margin-bottom: 20px;
+    /* background-color: rgb(15,6,23); */
+    /* Animation */
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    /* border-bottom: 0.5px solid white; */
+}
+
+.navv-linkss{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.navv-linkss img{
+    width: 80px;
+    height:70px;
+    margin-right: 20px;
+}
+.navv-linkss a{
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+}
+
+.navv-linkss a h4{
+    font-weight: 600;
+    font-size: 18px;
+}
+.navv-linkss a h4:hover{
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
+
+.navv-linkss{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    cursor: pointer;
+}
+.navv-linkss .input-div input{
+    width: 300px;
+    padding: 7px 40px;
+    background-color: rgb(15,6,23);
+    border: 1px solid rgb(84,80,87);
+    border-radius: 5px;
+}
+.navv-linkss .input-div i{
+    position: relative;
+    right: -23px;
+}
+.login-button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(15,6,23);
+    color: white;
+    border: 1px solid white;
+    font-weight: 600;
+}
+.login-button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+.buy-button{
+    padding: 12px 18px;
+    border-radius: 10px;
+    background-color: rgb(92,22,149);
+    color: white;
+    font-weight: 600;
+}
+.navv-linkss i{
+    color: white;
+}
