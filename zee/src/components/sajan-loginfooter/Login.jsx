@@ -1,8 +1,11 @@
 import React from 'react'
 import './Login.css'
+
+import { Link } from "react-router-dom";
 const Login = () => {
+ 
   return (
-    <div  >
+    <div  >u
       <div className='main'>
       <div><h4>Login to ZEE5</h4></div>
       <div ><p className='welcome'>Login to continue enjoying uninterrupted video and personalised experience.</p></div>
@@ -17,8 +20,18 @@ const Login = () => {
         <p >Email ID Or Mobile Number</p>
         <form action="">  
            <input type="text" />
+           <p>Password</p>
+           <input type="password"  />
+           <div className='forgot'>
+            <span>Forgot Password?</span>
+           </div>
+
+           <input type="submit" value="Login" />
         </form>
-        
+        <div>
+          <span>New to ZEE5?</span>
+          {/* <span><Link to="/Register">Register</Link> </span> */}
+        </div>
         
       </div>
 
