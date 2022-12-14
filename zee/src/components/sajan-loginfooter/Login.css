@@ -7,7 +7,7 @@
     width: 27%;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: auto;
     margin: auto;
     margin-top: 70px;
@@ -32,9 +32,16 @@
     border: none;
     padding: 10px 12px;
 }
-input{
+input[type=text]{
     outline: none;
     color: white;
     border: none;
     background: none;
+    border-bottom: 1px solid #B40329;
+    width: 100%;
+}
+.login-input p{
+    margin-left: -170px;
+    margin-top: 40px;
+    font-size: 12px;
 }

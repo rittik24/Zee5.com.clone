@@ -14,7 +14,7 @@ const Login = () => {
       </div>
       <div><button className='or'>or</button></div>
       <div className='login-input'>
-        <h5 >Email ID Or Mobile Number</h5>
+        <p >Email ID Or Mobile Number</p>
         <form action="">  
            <input type="text" />
         </form>

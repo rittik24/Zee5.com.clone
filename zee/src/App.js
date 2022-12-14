@@ -4,7 +4,7 @@ import Login from './components/sajan-loginfooter/Login';
 function App() {
   return (
     <div className="App">
-      <Home />
+      {/* <Home /> */}
       <Login/>
     </div>
   );
