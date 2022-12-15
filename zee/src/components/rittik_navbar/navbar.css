@@ -5,7 +5,8 @@
     height: fit-content;
     z-index: 1;
     display: flex;
-    justify-content: space-around;
+    gap: 50px;
+    /* justify-content:space-around; */
     padding: 5px;
     background-color: rgb(15,6,23);
     margin-bottom: 20px;
@@ -17,10 +18,12 @@
 }
 
 .navv-linkss{
-    width: fit-content;
+    width:fit-content;
     display: flex;
     flex-direction: row;
     cursor: pointer;
+    gap: 5px;
+    /* border: 2px solid green; */
 }
 
 .navv-linkss img{
@@ -47,11 +50,13 @@
 .navv-linkss{
     display: flex;
     flex-direction: row;
-    width: 45%;
+    width:fit-content;
     justify-content: space-around;
     align-items: center;
     height: 70px;
     cursor: pointer;
+    gap: 10px;
+    /* border: 2px solid red; */
 }
 .navv-linkss .input-div input{
     width: 300px;
@@ -64,13 +69,30 @@
     position: relative;
     right: -23px;
 }
-.login-button{
+.admin-button{
     padding: 5px 10px;
     border-radius: 5px;
     background-color: rgb(15,6,23);
     color: white;
     border: 1px solid white;
     font-weight: 200;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.admin-button:hover{
+    background-color: white;
+    color: black;
+}
+.login-button{
+    padding: 5px 10px;
+    border-radius: 5px;
+  
+    background-color: rgb(15,6,23);
+    color: white;
+    border: 1px solid white;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 10px;
 }
 .login-button:hover{
     background-color: white;
@@ -80,12 +102,22 @@
 
 
 .buy-button{
-    padding: 12px 18px;
+    padding: 10px 10px;
     border-radius: 10px;
     background-color: rgb(92,22,149);
     color: white;
-    font-weight: 400;
+    font-weight: 200;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+.buy-button:hover{
+    background-color:rgb(68, 12, 114);
+    color: white;
 }
 .navv-linkss i{
     color: white;
+}
+.fas fa-search{
+    width: 20%;
 }
