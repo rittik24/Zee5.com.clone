@@ -15,14 +15,12 @@
     transition: all 0.5s;
     /* border-bottom: 0.5px solid white; */
 }
-
 .navv-linkss{
     width: fit-content;
     display: flex;
     flex-direction: row;
     cursor: pointer;
 }
-
 .navv-linkss img{
     width: 80px;
     height:60px;
@@ -33,7 +31,6 @@
     color: white;
     margin-right: 25px;
 }
-
 .navv-linkss a h4{
     font-weight: 600;
     font-size: 18px;
@@ -42,8 +39,6 @@
     border-bottom: 2px solid white;
     padding-bottom: 3px;
 }
-
-
 .navv-linkss{
     display: flex;
     flex-direction: row;
@@ -64,6 +59,14 @@
     position: relative;
     right: -23px;
 }
+.admin-button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(15,6,23);
+    color: white;
+    border: 1px solid white;
+    font-weight: 600;
+}
 .login-button{
     padding: 5px 10px;
     border-radius: 5px;
@@ -76,9 +79,6 @@
     background-color: white;
     color: black;
 }
-
-
-
 .buy-button{
     padding: 12px 18px;
     border-radius: 10px;
