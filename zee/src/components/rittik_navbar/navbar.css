@@ -23,6 +23,7 @@
     flex-direction: row;
     cursor: pointer;
     gap: 5px;
+    font-weight: 400;
     /* border: 2px solid green; */
 }
 
@@ -38,7 +39,7 @@
 }
 
 .navv-linkss a h4{
-    font-weight: 200;
+    font-weight: 300;
     font-size: 15px;
 }
 .navv-linkss a h4:hover{
