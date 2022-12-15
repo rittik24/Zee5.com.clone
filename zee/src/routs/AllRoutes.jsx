@@ -1,7 +1,6 @@
 import {useState, useEffect} from "react";
 import axios from "axios";
 import { Route, Routes } from "react-router-dom";
-
 import Home from "../components/anirudh_home/Home";
 import Login from "../components/sajan_loginfooter/Login";
 import CarouselDemo from "../components/anirudh_home/CarouselDemo";
@@ -10,7 +9,7 @@ import MoviesDemo from "../components/anirudh_home/MoviesDemo";
 import DramasDemo from "../components/anirudh_home/DramasDemo";
 import WebSeriesDemo from "../components/anirudh_home/WebSeriesDemo";
 import TVShows from "../components/anirudh_home/TVShows";
-
+import Buyplan from "../components/moumita_buyplan/Buyplan";
 import UserDashboard from "../components/aniket_details/UserDashboard";
 import AdminDashboard from "../components/aniket_details/AdminDashboard";
 
@@ -55,6 +54,7 @@ export default function AllRoutes() {
       <Route path="/userdashboard" element={<UserDashboard />}></Route>
       <Route path="/admindashboard" element={<AdminDashboard />}></Route>
       <Route path="/tvshows" element={<TVShows />}></Route>
+      <Route path="/subscription" element={<Buyplan />}></Route>
     </Routes>
   );
 };
