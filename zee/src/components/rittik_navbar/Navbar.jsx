@@ -4,8 +4,8 @@ import { Box, Text, Flex } from "@chakra-ui/react"
 import "./navbar.css"
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi"
-import "./navbar.css"
-import { Link } from 'react-router-dom'
+
+
 
 
 
@@ -48,18 +48,8 @@ function Navbar() {
          <button className='admin-button'>ADMIN</button>
         <button className='login-button'>LOGIN</button>
         <button className='buy-button'>BUY PLAN</button>
-        <Flex alignItems="center" className="NavbarSecondPartV-Menu" ><GiHamburgerMenu size={"20"} /></Flex>
-        <i class="fas fa-align-justify"></i>
-      </div>
-
-        <button className='admin-button'>ADMIN</button>
-        <button className='login-button'>LOGIN</button>
-        <button className='buy-button'>BUY PLAN</button>
-        <i class="fas fa-align-justify"></i>
-      </div>
-
-
-     
+        <Flex alignItems="center" className="NavbarSecondPartV-Menu" ><GiHamburgerMenu size={"20"} /></Flex>     
+      </div>    
     </div>
   )
 }
