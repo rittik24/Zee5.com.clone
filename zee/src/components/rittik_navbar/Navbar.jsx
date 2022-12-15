@@ -4,6 +4,11 @@ import { Box, Text, Flex } from "@chakra-ui/react"
 import "./navbar.css";
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi"
+import "./navbar.css"
+import { Link } from 'react-router-dom'
+
+
+
 
 
 function Navbar() {
@@ -40,12 +45,13 @@ function Navbar() {
         <i class="fas fa-download"></i>
 
         <Box className="NavbarSecondPartV-Lan" ><Flex><Text>A</Text><Text className="NavbarSecondPartV-LanHindi">अ</Text></Flex> </Box>
-        <Link to='/admindashboard'> <button className='admin-button'>ADMIN</button></Link>
-        <Link to='/login'><button className='login-button'>LOGIN</button></Link>
-       <Link to='/subscription'><button className='buy-button'>BUY PLAN</button></Link>
-        <Flex alignItems="center" className="NavbarSecondPartV-Menu" ><GiHamburgerMenu size={"20"} /></Flex>     
-      </div>    
+
+      <Link to='/admindashboard'> <button className='admin-button'>ADMIN</button></Link>
+      <Link to='/login'><button className='login-button'>LOGIN</button></Link>
+      <Link to='/subscription'><button className='buy-button'>BUY PLAN</button></Link>
+      <Flex alignItems="center" className="NavbarSecondPartV-Menu" ><GiHamburgerMenu size={"20"} /></Flex>
     </div>
+</div>
   )
 }
 

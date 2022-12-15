@@ -57,5 +57,5 @@ export default function AllRoutes() {
       <Route path="/subscription" element={<Buyplan />}></Route>
     </Routes>
   );
-}
- 
+};
+
