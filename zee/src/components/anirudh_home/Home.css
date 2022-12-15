@@ -1,6 +1,6 @@
 .slide1{
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 
 .trend-container{
@@ -143,6 +143,19 @@
 
 .dummy-products:hover .overview{
     transform: translateY(0);
+}
+
+.tvshow-products{
+    width: 270px;
+    height: 350px;
+    background-color: #11051c;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tvshow-products img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 1200px) {
