@@ -12,13 +12,12 @@ const AdminDashboard = () => {
     return data;
   };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   return (
     <Box h="100%">
-      <Heading mb="30px">Admin Dashboard</Heading>
       <Flex
         border="0px solid yellow"
         color="white"
@@ -26,7 +25,10 @@ const AdminDashboard = () => {
         justifyContent="center"
         alignItems="top"
       >
-        <Box h="100%">
+        <Box h="100%" position="sticky" top="10%" zIndex="1">
+          <Heading mb="30px" as="h2" size="lg" color="blue.500">
+            Admin Dashboard
+          </Heading>
           <AdminDetails />
         </Box>
         <Box h="100%">

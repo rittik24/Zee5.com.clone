@@ -5,6 +5,8 @@ import {
   Heading,
   Input,
   Form,
+  FormHelperText,
+  Text,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { patchReq_Products } from "../utils";
@@ -26,16 +28,19 @@ const UpdateProductForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    setFormData(initState);
-    setID("");
+
     patchReq_Products(id, formData)
       .then((res) => {
-        setLoading(false).then((res) => alert("Details updated successfully"));
+        setLoading(false);
+        alert("Details updated successfully");
       })
       .catch((err) => {
         console.log(err);
         alert("Network update request failed");
       });
+
+    setFormData(initState);
+    setID("");
   };
 
   return (
@@ -46,6 +51,8 @@ const UpdateProductForm = () => {
 
       {/* Form- Product Description to update product */}
       <form onSubmit={(e) => handleSubmit(e)}>
+        <Text color="red">Product ID is mandatory to update the product</Text>
+
         <Box mb="20px">
           <Input
             variant="flushed"
