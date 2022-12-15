@@ -1,5 +1,5 @@
 :root{
-    --primary:hsla(282, 75%, 8%, 0.75);
+    --primary:hsla(282, 89%, 11%, 0.75);
     --secondary:hsla(278, 85%, 3%, 200);
 }
 .headb{
@@ -8,7 +8,7 @@
     /* background:rgba(0,0,0,0.5) url("https://s3images.zee5.com/wp-content/uploads/sites/7/2021/09/Screenshot-2021-09-18-at-2.42.35-PM.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 120vh;
+    min-height: 80vh;
     background-position: center;
     /* background-blend-mode:darken;  */
  
@@ -22,10 +22,11 @@
     align-items: center;
 }
 .navb{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     padding: 0px 50px ;
+    padding-top: 5px;
     
  
 }
@@ -33,24 +34,27 @@
     width: 50px;
 }
 .pln{
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
 }
 .mainbob{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 15px;
+    background-color: #0F0617;
 
 }
 .boxb{
-    border: 6px solid blue;
+    /* border: 6px solid blue; */
     display: flex;
     gap: 40px;
     margin-top: 40px;
     padding: 30px;
 }
 .preb{
-    border: 3px solid #e6dde3;
+    /* border: 3px solid #e6dde3; */
     display: flex;
     justify-content: center;
     gap: 35px;
@@ -58,27 +62,61 @@
 
 }
 .preb>div{
-    border: 1px solid #9d0d72;
+    border: 1px solid #d2c2cd;
     display: flex;
     flex-direction: column;
     padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
 
 
 }
 .applyb{
-    border: 1px solid #9d0d72;
+    /* border: 1px solid #9d0d72; */
+    background-color: #1D1425;
     display: flex;
     gap: 30px;
     padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 
 }
 .payb{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     display: flex;
     gap: 20px;
-    padding: 10px;
+    padding: 25px 30px;
+    background-color: #1D1425;
+    margin-top: 10px;
+    border-radius: 0 0 10px 10px ;
+    
+
 }
 .btnb{
-    background-color: #ffffff;
-    color: black;
+    background-color: #8230C6;
+    color: #ffffff;
+    padding: 10px 150px;
+    margin-left: 20px;
+    border-radius: 10px;
+
+}
+.pb{
+    font-size:12px ;
+    margin-bottom: 10px;
+    /* margin-top: 5px; */
+}
+
+.h2b{
+    /* margin-bottom: 15px; */
+    margin-top: 15px;
+
+}
+.fotterb{
+display: flex;
+justify-content: space-between;
+padding: 15px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.fotb{
+    font-size: 12px;
 }
