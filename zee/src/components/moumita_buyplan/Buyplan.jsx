@@ -1,5 +1,12 @@
 import React from 'react'
 import "./Buyplan.css";
+// import {AiOutlineCheck} from "react-icons/ai";
+// import {AiOutlineCheck} from "react-icons/ai";
+// import { AiOutlineCheckSquare } from 'react-icons/ai';
+// import { FaBeer } from 'react-icons/fa';
+// AiOutlineCheckSquare
+// AiOutlineCheck
+
 
 
 const Buyplan = () => {
@@ -18,18 +25,18 @@ const Buyplan = () => {
     {/* 1st */}
     <div>
       <div>
-        <h2>Premium</h2>
-        <p>ebfdieuwhfdo;ewijdwdiwpdw</p>
+        <h2>Premium content</h2>
+        <p className='pb'>Movies, Web Series, TV Shows, Live TV, Downloads</p>
       </div>
       <hr />
       <div>
-        <h2>Premium</h2>
+        <h2 className='h2b'>Ad-free</h2>
     
       </div>
       <hr />
       <div>
-        <h2>Premium</h2>
-        <p>ebfdieuwhfdo;ewijdwdiwpdw</p>
+        <h2 className='h2b'>Device</h2>
+        <p className='pb'>Mobile, TV and Laptop</p>
       </div>
       <div>
 
@@ -83,21 +90,28 @@ const Buyplan = () => {
     </div>
       <div className='preb'>
     <div>
-      <h3>Premium HD</h3>
+      <h3>Premium</h3>
       <h3>$399</h3>
+      {/* <AiOutlineCheckSquare/> */}
+ 
+{/* <FaBeer/> */}
+      
+      {/* <AiOutlineCheck/>
+      <AiOutlineCheck/> */}
+
       <h3>3 Months</h3>
 
     </div>
     <div>
       <h3>Premium HD</h3>
-      <h3>$399</h3>
-      <h3>3 Months</h3>
+      <h3>$699</h3>
+      <h3>12 Months</h3>
 
     </div>
     <div>
-      <h3>Premium HD</h3>
-      <h3>$399</h3>
-      <h3>3 Months</h3>
+      <h3>Premium 4k</h3>
+      <h3>$1499</h3>
+      <h3>12 Months</h3>
 
     </div>
 
@@ -105,7 +119,7 @@ const Buyplan = () => {
       {/* apply */}
       <div className='applyb'>
       <p>lo</p>
-      <p>apply</p>
+      <p>Apply code</p>
 
       </div>
       <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability  </p>
@@ -116,7 +130,7 @@ const Buyplan = () => {
       <p>Pay useing UPI</p>
       </div>
       <button className='btnb'>Buy Premium</button>
-      {/* <h1>giehedbw</h1> */}
+ 
     
      
 
@@ -133,7 +147,12 @@ const Buyplan = () => {
     </div>
 
     </div>
+    {/* <hr/> */}
+    <div className='fotterb'>
+    <div><h4 className='fotb'>Copyright © 2022 Zee Entertainment Enterprises Ltd. All rights reserved.</h4></div>
+<div><h4 className='fotb'>About Us | Help Center | Privacy Policy | Terms of Use | Preferences</h4></div>
 
+</div>
     </div>
   )
 }
