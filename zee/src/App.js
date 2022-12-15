@@ -1,14 +1,17 @@
-import "./App.css";
+
+import './App.css';
+import Navbar from './components/rittik_navbar/Navbar';
 import AllRoutes from './routs/AllRoutes';
-import Navbar from "./components/rittik_navbar/Navbar";
-import Buyplan from "./components/moumita_buyplan/Buyplan";
+import "./App.css";
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar />
-      <AllRoutes /> */}
-      <Buyplan/>
+
+      <Navbar/>
+     <AllRoutes/>
+
     </div>
   );
 }

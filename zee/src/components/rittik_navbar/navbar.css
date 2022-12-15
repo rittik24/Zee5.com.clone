@@ -5,6 +5,7 @@
     height: fit-content;
     z-index: 1;
     display: flex;
+    gap: 50px;
     justify-content: space-around;
     padding: 5px;
     background-color: rgb(15,6,23);
@@ -15,12 +16,17 @@
     transition: all 0.5s;
     /* border-bottom: 0.5px solid white; */
 }
+
 .navv-linkss{
-    width: fit-content;
+    width:fit-content;
     display: flex;
     flex-direction: row;
     cursor: pointer;
+    gap: 5px;
+    font-weight: 400;
+    /* border: 2px solid green; */
 }
+
 .navv-linkss img{
     width: 80px;
     height:60px;
@@ -31,23 +37,31 @@
     color: white;
     margin-right: 25px;
 }
+
 .navv-linkss a h4{
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 200;
+    font-size: 15px;
+
 }
 .navv-linkss a h4:hover{
     border-bottom: 2px solid white;
     padding-bottom: 3px;
 }
+
 .navv-linkss{
     display: flex;
     flex-direction: row;
-    width: 45%;
+    width:fit-content;
+    
     justify-content: space-around;
     align-items: center;
     height: 70px;
     cursor: pointer;
+
+    gap: 10px;
+    /* border: 2px solid red; */
 }
+
 .navv-linkss .input-div input{
     width: 300px;
     padding: 7px 40px;
@@ -55,6 +69,7 @@
     border: 1px solid rgb(84,80,87);
     border-radius: 5px;
 }
+
 .navv-linkss .input-div i{
     position: relative;
     right: -23px;
@@ -65,26 +80,51 @@
     background-color: rgb(15,6,23);
     color: white;
     border: 1px solid white;
-    font-weight: 600;
+
+    font-weight: 200;
+    margin-left: 10px;
+    font-size: 12px;
 }
+.admin-button:hover{
+    background-color: white;
+    color: black;
+}
+
 .login-button{
     padding: 5px 10px;
     border-radius: 5px;
+  
     background-color: rgb(15,6,23);
     color: white;
     border: 1px solid white;
-    font-weight: 600;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 10px;
+    background-color: rgb(15,6,23);
+    color: white;
+    border: 1px solid white;
 }
+
 .login-button:hover{
     background-color: white;
     color: black;
 }
+
+
+
 .buy-button{
-    padding: 12px 18px;
+    padding: 10px 10px;
     border-radius: 10px;
     background-color: rgb(92,22,149);
     color: white;
-    font-weight: 600;
+    font-weight: 200;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+.buy-button:hover{
+    background-color:rgb(68, 12, 114);
+    color: white;
 }
 .navv-linkss i{
     color: white;

@@ -42,7 +42,8 @@ export default function AllRoutes() {
       fetchdata1()
     }, [])
 
-  return (
+export default function AllRoutes(){
+    return (
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/login" element={<Login />}></Route>
@@ -57,3 +58,4 @@ export default function AllRoutes() {
     </Routes>
   );
 }
+ 
