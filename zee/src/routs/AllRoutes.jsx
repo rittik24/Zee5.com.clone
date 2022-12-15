@@ -41,8 +41,7 @@ export default function AllRoutes() {
     useEffect(() => {
       fetchdata1()
     }, [])
-
-export default function AllRoutes(){
+    
     return (
     <Routes>
       <Route path="/" element={<Home />}></Route>
