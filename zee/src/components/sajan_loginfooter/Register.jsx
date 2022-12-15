@@ -1,9 +1,25 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link,useNavigate} from "react-router-dom";
 import { useState } from 'react';
 import {SmallCloseIcon} from '@chakra-ui/icons'
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 const Register = () => {
-  const [value,setValue]=useState(true)
+  const [email,setEmail]=useState("")
+  const [password,setPassword]=useState("")
+  const [error,setError]=useState("")
+  const auth = getAuth();
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    setError("");
+    try{
+      createUserWithEmailAndPassword(auth,email,password)
+    } catch(err){
+        setError(err.message)
+        console.log(error)
+    }
+
+
+  }
   return (
     <div  >
       <div className='main' style={{width:"25%"}}>
@@ -22,10 +38,10 @@ const Register = () => {
       <div><button className='reg-or'>or</button></div>
       <div className='login-input'>
         <p >Email</p>
-        <form action="">  
-           <input type="text" />
+        <form onSubmit={handleSubmit}>  
+           <input type="email" onChange={(e)=>setEmail(e.target.value)}/>
            <p>Password</p>
-           <input type="password"  />
+           <input type="password" onChange={(e)=>setPassword(e.target.value)} />
            <div className='forgot'>
             <span>Forgot Password?</span>
            </div>

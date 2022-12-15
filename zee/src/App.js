@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       {/* <Navbar /> */}
       <AllRoutes />
-      <Login/>
-      <Register/>
-      {/* <Footer/> */}
+      {/* <Login/> */}
+      {/* <Register/> */}
+
     </div>
   );
 }

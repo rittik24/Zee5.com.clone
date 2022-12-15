@@ -3,7 +3,7 @@ import './Login.css'
 import {SmallCloseIcon} from '@chakra-ui/icons'
 import { Link } from "react-router-dom";
 const Login = () => {
- 
+    
   return (
     <div  >
       
