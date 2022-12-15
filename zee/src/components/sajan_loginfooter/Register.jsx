@@ -21,12 +21,18 @@ const Register = () => {
       </div>
       <div><button className='reg-or'>or</button></div>
       <div className='login-input'>
-        <p >Mobile Number</p>
+        <p >Email</p>
         <form action="">  
-           <input type="tel" name="" id="" />
-           <input type="submit" value="Send OTP" id="otp" />
-          
+           <input type="text" />
+           <p>Password</p>
+           <input type="password"  />
+           <div className='forgot'>
+            <span>Forgot Password?</span>
+           </div>
+
+           <input type="submit" value="SignUp" />
         </form>
+        
         <div className='existing'>
           <span>Already registered?</span>
           <span><Link to="/login">Login</Link> </span>
