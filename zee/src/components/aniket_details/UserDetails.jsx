@@ -8,9 +8,10 @@ import {
   Flex,
   Spacer,
 } from "@chakra-ui/react";
+
 import React from "react";
 
-const AdminDetails = () => {
+const UserDetails = () => {
   const isActive = true;
 
   return (
@@ -23,7 +24,7 @@ const AdminDetails = () => {
       paddingInline="2%"
     >
       {/* Admin Prof-pic */}
-      <Box w="-moz-fit-content">
+      <Box>
         <Avatar
           size="xl"
           name="Aniket Pandey"
@@ -35,27 +36,20 @@ const AdminDetails = () => {
 
       <Spacer />
 
-      {/* Admin description */}
-      <Box>
+      {/* User description */}
+      <Box color="yellow">
         <Heading as="h3" size="md">
           Aniket Pandey
         </Heading>
-        <Text>Admin ID : admin1001</Text>
-        <Text>Role : Full-Stack Web Developer</Text>
+        <Text>User ID : user1001</Text>
       </Box>
 
       <Spacer />
 
-      {/* Reports */}
-      <Button colorScheme="blue">Reports</Button>
-
-      {/* Keep it form now don't delete */}
-      {/* <Flex gap="10px" w="-moz-fit-content"> */}
       {/* Logout Button */}
-      {/* <Button colorScheme="red">Logout</Button> */}
-      {/* </Flex> */}
+      <Button colorScheme="red">Logout</Button>
     </Flex>
   );
 };
 
-export default AdminDetails;
+export default UserDetails;
