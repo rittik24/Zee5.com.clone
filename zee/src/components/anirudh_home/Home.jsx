@@ -165,7 +165,7 @@ const Home = () => {
                 <div className='overview'>
                   <div className='back'>
                     <h2 className='trend-title'>{item.title}</h2>
-                    <Button>Watch Trailer</Button>
+                    <Link to={`/trendingdemo/${item.id}`}><Button>Watch Trailer</Button></Link>
                   </div>
                   <h3>Summary</h3>
                   {item.description}
@@ -186,7 +186,7 @@ const Home = () => {
                 <div className='overview'>
                   <div className='back'>
                     <h2 className='trend-title'>{item.title}</h2>
-                    <Button>Watch Trailer</Button>
+                    <Link to={`/moviedemo/${item.id}`}><Button>Watch Trailer</Button></Link>
                   </div>
                   <h3>Summary</h3>
                   {item.description}
@@ -224,7 +224,7 @@ const Home = () => {
                 <div className='overview'>
                   <div className='back'>
                     <h2 className='trend-title'>{item.title}</h2>
-                    <Button>Watch Trailer</Button>
+                    <Link to={`/dramademo/${item.id}`}><Button>Watch Trailer</Button></Link>
                   </div>
                   <h3>Summary</h3>
                   {item.description}
@@ -258,7 +258,7 @@ const Home = () => {
                 <div className='overview'>
                   <div className='back'>
                     <h2 className='trend-title'>{item.title}</h2>
-                    <Button>Watch Trailer</Button>
+                    <Link to={`/webseriesdemo/${item.id}`}><Button>Watch Trailer</Button></Link>
                   </div>
                   <h3>Summary</h3>
                   {item.description}
