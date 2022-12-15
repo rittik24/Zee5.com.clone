@@ -37,6 +37,7 @@ function Navbar() {
           <input type="text" placeholder='Search for Movies ,Shows etc..' />
         </div>
         <i class="fas fa-download"></i>
+        <button className='admin-button'>ADMIN</button>
         <button className='login-button'>LOGIN</button>
         <button className='buy-button'>BUY PLAN</button>
         <i class="fas fa-align-justify"></i>
