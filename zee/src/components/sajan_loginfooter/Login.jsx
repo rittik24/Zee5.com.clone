@@ -1,12 +1,14 @@
 import React from 'react'
 import './Login.css'
-
+import {SmallCloseIcon} from '@chakra-ui/icons'
 import { Link } from "react-router-dom";
 const Login = () => {
  
   return (
-    <div  >u
+    <div  >
+      
       <div className='main'>
+      <Link to="/" className='cancle'><SmallCloseIcon/></Link>
       <div><h4>Login to ZEE5</h4></div>
       <div ><p className='welcome'>Login to continue enjoying uninterrupted video and personalised experience.</p></div>
       <div className='login-logo'>
@@ -28,9 +30,9 @@ const Login = () => {
 
            <input type="submit" value="Login" />
         </form>
-        <div>
+        <div style={{marginTop:'5px'}}>
           <span>New to ZEE5?</span>
-          <span><Link to="/Register">Register</Link> </span>
+          <span style={{color:" #a785ff",fontSize:"13px"}}><Link to="/register">Register</Link> </span>
         </div>
         
       </div>
