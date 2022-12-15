@@ -42,7 +42,7 @@ export default function AllRoutes() {
       fetchdata1()
     }, [])
 
-export default function AllRoutes(){
+
     return (
     <Routes>
       <Route path="/" element={<Home />}></Route>
@@ -57,5 +57,5 @@ export default function AllRoutes(){
       <Route path="/tvshows" element={<TVShows />}></Route>
     </Routes>
   );
-}
- 
+};
+
