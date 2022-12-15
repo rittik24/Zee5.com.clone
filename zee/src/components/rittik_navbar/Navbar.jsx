@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react'
+
 import { Box, Text, Flex } from "@chakra-ui/react"
 import "./navbar.css"
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi"
+import "./navbar.css"
+import { Link } from 'react-router-dom'
+
+
 
 
 
@@ -38,6 +43,7 @@ function Navbar() {
           <input type="text" placeholder='Search for Movies ,Shows etc..' />
         </div>
         <i class="fas fa-download"></i>
+
         <Box className="NavbarSecondPartV-Lan" ><Flex><Text>A</Text><Text className="NavbarSecondPartV-LanHindi">अ</Text></Flex> </Box>
          <button className='admin-button'>ADMIN</button>
         <button className='login-button'>LOGIN</button>
@@ -46,6 +52,14 @@ function Navbar() {
         <i class="fas fa-align-justify"></i>
       </div>
 
+        <button className='admin-button'>ADMIN</button>
+        <button className='login-button'>LOGIN</button>
+        <button className='buy-button'>BUY PLAN</button>
+        <i class="fas fa-align-justify"></i>
+      </div>
+
+
+     
     </div>
   )
 }
