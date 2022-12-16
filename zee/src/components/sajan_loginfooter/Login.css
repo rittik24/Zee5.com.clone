@@ -17,17 +17,10 @@
 .login-logo {
     width: 69.5%;
     display: grid;
-<<<<<<< HEAD
     grid-template-columns: repeat(4,1fr);
     margin: auto;  
     margin-top: 40px;
     margin-bottom: 27px;
-=======
-    grid-template-columns: repeat(4, 1fr);
-    margin: auto;
-    margin-top: 45px;
-    margin-bottom: 30px;
->>>>>>> main
 }
 
 .welcome {
@@ -63,35 +56,20 @@ input[type=text],
     margin-top: 30px;
     font-size: 12px;
     font-weight: bold;
-<<<<<<< HEAD
     margin-bottom: 8px;  
-    color: gray;
-
-}
-.forgot{
-    /* margin-top: 60px; */
-=======
-    margin-bottom: 10px;
     color: gray;
 
 }
 
 .forgot {
     margin-top: 60px;
->>>>>>> main
     color: #a785ff;
     margin-top: 15px;
     font-size: 13px;
 }
-<<<<<<< HEAD
-.forgot:hover{
-    cursor: pointer;
-}
-input[type=submit]{
-=======
 
 input[type=submit] {
->>>>>>> main
+
     width: 100%;
     color: #74798b;
     border: 1px solid;
@@ -120,7 +98,7 @@ input[type=submit]:hover {
     width: 90%;
     
 }
-<<<<<<< HEAD
+
 .login-logo-google>div img{
 background-color: white;
 }
@@ -135,23 +113,10 @@ background-color: white;
 
     }
    .reg-or{
-=======
-
-.login-logo-google>div img {
-    background-color: white;
-}
-
-.login-logo-google>div+div span {
-    background-color: white;
-}
-
-.reg-or {
->>>>>>> main
     color: white;
     border-radius: 50%;
     background-color: #450948;
     border: none;
-<<<<<<< HEAD
     padding: 5px 10px;
     margin-top: 40px;
    } 
@@ -169,12 +134,7 @@ background-color: white;
     margin-left: 800px;
     color: gray;
    }
-=======
-    padding: 10px 12px;
-    margin-top: 60px;
-}
-
+    
 form {
     margin-bottom: 20px;
 }
->>>>>>> main

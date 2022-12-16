@@ -1,12 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
-import './Loging.css'
+import './Login.css'
 import {SmallCloseIcon} from '@chakra-ui/icons';
 import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider,signInWithPopup } from "firebase/auth";
-import { auth } from '../firebase';
+import { auth } from '../../firebase';
 import { Link,useNavigate,Navigate} from "react-router-dom";
 import { async } from '@firebase/util';
-import Home from './Home';
 const Login = () => {
  const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
