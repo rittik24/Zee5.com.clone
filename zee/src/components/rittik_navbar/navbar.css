@@ -6,7 +6,7 @@
     z-index: 1;
     display: flex;
     gap: 50px;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     padding: 5px;
     background-color: rgb(15,6,23);
     margin-bottom: 20px;
@@ -39,7 +39,7 @@
 }
 
 .navv-linkss a h4{
-    font-weight: 200;
+    font-weight: 300;
     font-size: 15px;
 
 }

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
 import { Box, Text, Flex } from "@chakra-ui/react"
-import "./navbar.css"
+import "./navbar.css";
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi"
-
-
+import "./navbar.css"
+import { Link } from 'react-router-dom'
 
 
 
@@ -33,9 +33,9 @@ function Navbar() {
         </div>
         <Link to='/'><h4>Home</h4></Link>
         <Link to='/tvshows'><h4>TV Shows</h4></Link>
-        <Link to='/zee5/Movies'><h4>Movies</h4></Link>
-        <Link to='/zee5/Web-series'><h4>Web Series</h4></Link>
-        <Link to='/zee5/News'><h4>News</h4></Link>
+        <Link to='/'><h4>Movies</h4></Link>
+        <Link to='/'><h4>Web Series</h4></Link>
+        <Link to='/'><h4>News</h4></Link>
       </div>
       <div className='navv-linkss' id="navv-link">
         <div className='input-div'>
@@ -45,12 +45,13 @@ function Navbar() {
         <i class="fas fa-download"></i>
 
         <Box className="NavbarSecondPartV-Lan" ><Flex><Text>A</Text><Text className="NavbarSecondPartV-LanHindi">अ</Text></Flex> </Box>
-         <button className='admin-button'>ADMIN</button>
-        <button className='login-button'>LOGIN</button>
-        <button className='buy-button'>BUY PLAN</button>
-        <Flex alignItems="center" className="NavbarSecondPartV-Menu" ><GiHamburgerMenu size={"20"} /></Flex>     
-      </div>    
+
+      <Link to='/admindashboard'> <button className='admin-button'>ADMIN</button></Link>
+      <Link to='/login'><button className='login-button'>LOGIN</button></Link>
+      <Link to='/subscription'><button className='buy-button'>BUY PLAN</button></Link>
+      <Flex alignItems="center" className="NavbarSecondPartV-Menu" ><GiHamburgerMenu size={"20"} /></Flex>
     </div>
+</div>
   )
 }
 
