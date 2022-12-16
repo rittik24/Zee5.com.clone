@@ -10,7 +10,6 @@ import { GiHamburgerMenu } from "react-icons/gi"
 
 
 
-
 function Navbar() {
   const [barsIcon, setBarsIcon] = useState("block");
   const [navs, setNavs] = useState("none");

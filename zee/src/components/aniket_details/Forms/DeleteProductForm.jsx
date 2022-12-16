@@ -45,7 +45,7 @@ const DeleteProductForm = () => {
       </Heading>
 
       <FormControl>
-        <Text color="red">Product ID is mandatory to delete the product</Text>
+        <Text color="red">Product ID is mandatory to delete a product.</Text>
         <Box mb="20px">
           <Input
             variant="flushed"
@@ -61,7 +61,7 @@ const DeleteProductForm = () => {
           onClick={handleSubmit}
           colorScheme="red"
           isLoading={loading}
-          loadingText="Submitting"
+          loadingText="SUBMITTING"
           disabled={id === ""}
         >
           DELETE PRODUCT
