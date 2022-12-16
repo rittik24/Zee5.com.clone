@@ -12,6 +12,7 @@ import TVShows from "../components/anirudh_home/TVShows";
 import Buyplan from "../components/moumita_buyplan/Buyplan";
 import UserDashboard from "../components/aniket_details/UserDashboard";
 import AdminDashboard from "../components/aniket_details/AdminDashboard";
+import About from "../components/rittik_navbar/About";
 
 export default function AllRoutes() {
     const [carousel, setCarousel] = useState([]);
@@ -55,6 +56,7 @@ export default function AllRoutes() {
       <Route path="/admindashboard" element={<AdminDashboard />}></Route>
       <Route path="/tvshows" element={<TVShows />}></Route>
       <Route path="/subscription" element={<Buyplan />}></Route>
+      <Route path="/About" element={<About />}></Route>
     </Routes>
   );
 };
