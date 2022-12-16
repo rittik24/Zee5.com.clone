@@ -21,68 +21,65 @@ const UserContent = () => {
     setActiveMenu({ [activeValue]: true });
   };
 
-  // console.log(activeMenu);
-
   return (
     <Flex>
-      {/* Options */}
+      {/* Options in side bar */}
       <Box
-        border="1px solid red"
+        border="0px solid red"
         w="15%"
-        // h="100%"
         textAlign="left"
         px="2%"
-        py="1%"
+        py="3%"
+        bgColor="gray.1000"
       >
         <Text
           cursor="pointer"
           mb="15%"
-          // px="5%"
           onClick={() => handleClick("MyProfile")}
           color={activeMenu.MyProfile ? "red" : "blue"}
+          textDecoration={activeMenu.MyProfile ? "underline" : "none"}
         >
           My Profile
         </Text>
         <Text
           cursor="pointer"
           mb="12%"
-          // px="5%"
           onClick={() => handleClick("MyWatchlist")}
           color={activeMenu.MyWatchlist ? "red" : "blue"}
+          textDecoration={activeMenu.MyWatchlist ? "underline" : "none"}
         >
           My Watchlist
         </Text>
         <Text
           cursor="pointer"
           mb="12%"
-          // px="5%"
           onClick={() => handleClick("MySubscription")}
           color={activeMenu.MySubscription ? "red" : "blue"}
+          textDecoration={activeMenu.MySubscription ? "underline" : "none"}
         >
           My Subscription
         </Text>
         <Text
           cursor="pointer"
           mb="12%"
-          // px="5%"
           onClick={() => handleClick("MyRentals")}
           color={activeMenu.MyRentals ? "red" : "blue"}
+          textDecoration={activeMenu.MyRentals ? "underline" : "none"}
         >
           My Rentals
         </Text>
         <Text
           cursor="pointer"
-          // mb="12%" no need it's the last option
-          // px="5%"
           onClick={() => handleClick("MyTransactions")}
           color={activeMenu.MyTransactions ? "red" : "blue"}
+          textDecoration={activeMenu.MyTransactions ? "underline" : "none"}
         >
           My Transactions
         </Text>
       </Box>
 
       {/* Info of respective active option */}
-      <Box w="85%" border="1px solid red" px="2%" py="1%">
+      <Box w="85%" border="0px solid red">
         {activeMenu.MyProfile && <MyProfile />}
         {activeMenu.MyWatchlist && <MyWatchlist />}
         {activeMenu.MySubscription && <MySubscription />}

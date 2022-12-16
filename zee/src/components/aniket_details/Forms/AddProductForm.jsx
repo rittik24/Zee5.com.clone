@@ -44,7 +44,17 @@ const AddProductForm = () => {
   //   on submit
   const handleSubmit = () => {
     // console.log(formData);
-    addReq_Products(formData);
+    setLoading(true);
+    addReq_Products(formData)
+      .then((res) => {
+        setLoading(false);
+        alert("Product added successfully");
+      })
+      .catch((err) => {
+        setLoading(false);
+        setError(true);
+        alert("Network request for adding product failed");
+      });
     setFormData(initState);
   };
 
@@ -57,7 +67,7 @@ const AddProductForm = () => {
       {/* Form- Product Description to add product */}
       <FormControl>
         <FormHelperText color="red">
-          All fields are mandatory while adding products
+          All fields are mandatory to add a product.
         </FormHelperText>
         <Box mb="20px">
           <Input
@@ -100,6 +110,7 @@ const AddProductForm = () => {
           onClick={handleSubmit}
           colorScheme="green"
           isLoading={loading}
+          loadingText="SUBMITTING"
           disabled={isDisabled}
         >
           ADD PRODUCT

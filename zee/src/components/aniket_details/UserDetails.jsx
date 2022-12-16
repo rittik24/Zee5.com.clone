@@ -22,6 +22,8 @@ const UserDetails = () => {
       justifyContent="center"
       alignItems="center"
       paddingInline="2%"
+      bgColor="green.900"
+      py="1%"
     >
       {/* Admin Prof-pic */}
       <Box>
@@ -37,7 +39,7 @@ const UserDetails = () => {
       <Spacer />
 
       {/* User description */}
-      <Box color="yellow">
+      <Box color="yellow" textAlign="center">
         <Heading as="h3" size="md">
           Aniket Pandey
         </Heading>

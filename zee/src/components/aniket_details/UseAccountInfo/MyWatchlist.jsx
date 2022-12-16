@@ -16,8 +16,8 @@ import React from "react";
 
 const MyWatchlist = () => {
   return (
-    <Box>
-      <Heading as="h2" size="md">
+    <Box bgColor="gray.900" px="1%" py="2%">
+      <Heading as="h2" size="md" textAlign="center">
         My WatchList
       </Heading>
 
@@ -43,7 +43,7 @@ const MyWatchlist = () => {
 export default MyWatchlist;
 
 // Movie card function
-const MovieCard = ({ title, imgUrl, description }) => {
+export const MovieCard = ({ title, imgUrl, description }) => {
   return (
     <Card maxW="sm" color="whiteAlpha.700">
       {/* Image, description */}
@@ -73,7 +73,7 @@ const MovieCard = ({ title, imgUrl, description }) => {
   );
 };
 
-// Watchlist movies, data
+// Watchlist movies, data - which has to come dynamically for each current LoggedIn user
 const watchlist = [
   {
     id: 1,
