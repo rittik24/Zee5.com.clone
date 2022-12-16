@@ -6,6 +6,7 @@ import {
   FormControl,
   Heading,
   Input,
+  Text,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { deleteReq_Products } from "../utils";
@@ -26,7 +27,7 @@ const DeleteProductForm = () => {
     deleteReq_Products(id)
       .then((res) => {
         setLoading(false);
-        alert("Added successfully");
+        alert("Deleted successfully");
       })
       .catch((err) => {
         console.log("err");
@@ -44,6 +45,7 @@ const DeleteProductForm = () => {
       </Heading>
 
       <FormControl>
+        <Text color="red">Product ID is mandatory to delete the product</Text>
         <Box mb="20px">
           <Input
             variant="flushed"

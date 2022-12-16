@@ -2,23 +2,29 @@ import React from 'react'
 import { Link,useNavigate} from "react-router-dom";
 import { useState } from 'react';
 import {SmallCloseIcon} from '@chakra-ui/icons'
+import './Loging.css'
+import { auth } from '../firebase';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-const Register = () => {
+import { async } from '@firebase/util';
+import Login from './Login';
+const Register =() => {
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
   const [error,setError]=useState("")
-  const auth = getAuth();
-  const handleSubmit=(e)=>{
+  const navigate=useNavigate()
+  const handleSubmit=async (e)=>{
     e.preventDefault();
     setError("");
     try{
-      createUserWithEmailAndPassword(auth,email,password)
-    } catch(err){
-        setError(err.message)
-        console.log(error)
+        let user= await createUserWithEmailAndPassword(auth,email,password)
+        alert(`Registration Success through  ${user.user.email}`)
+        navigate("/Login")
     }
+    catch(err){
 
-
+          alert(err.message)
+    }
+    
   }
   return (
     <div  >
@@ -39,9 +45,9 @@ const Register = () => {
       <div className='login-input'>
         <p >Email</p>
         <form onSubmit={handleSubmit}>  
-           <input type="email" onChange={(e)=>setEmail(e.target.value)}/>
+           <input type="email" onChange={(e)=>setEmail(e.target.value)} value={email}/>
            <p>Password</p>
-           <input type="password" onChange={(e)=>setPassword(e.target.value)} />
+           <input type="password" onChange={(e)=>setPassword(e.target.value)} value={password}/>
            <div className='forgot'>
             <span>Forgot Password?</span>
            </div>

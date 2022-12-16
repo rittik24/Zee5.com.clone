@@ -71,11 +71,11 @@ const responsive2 = {
 
 const responsive3 = {
   desktop: {
-    breakpoint: {max: 3000, min: 1001},
+    breakpoint: { max: 3000, min: 1001 },
     items: 2
   },
   smobile: {
-    breakpoint: {max: 1000, min: 0},
+    breakpoint: { max: 1000, min: 0 },
     items: 1
   }
 }
@@ -95,12 +95,12 @@ const Languages = [
 ];
 
 const rent = [
-  {id: 1, url: "https://akamaividz2.zee5.com/image/upload/w_508,h_286,c_scale,f_webp,q_auto:eco/resources/0-0-1z5234572/list/1170x658withlogo24b333694acb425e80ed532a1ee94469.jpg", title: "Spider-Man: No Way Home The Extended Version", type: "Adventure", hrs: "2h 29m"},
-  {id: 2, url: "https://akamaividz2.zee5.com/image/upload/w_508,h_286,c_scale,f_webp,q_auto:eco/resources/0-0-1z5214599/list/1170x658withlogof65c0a6f484e4151a7336f67cd7b8da0.jpg", title: "Jurassic World Dominion", type: "Sci-Fi", hrs: "2h 20m"},
-  {id: 3, url: "https://akamaividz2.zee5.com/image/upload/w_508,h_286,c_scale,f_webp,q_auto:eco/resources/0-0-1z5261867/list/ImageTitle450e3fa504774412943186baf00bdb6e.jpg", title: "Beast", type: "Adventure", hrs: "1h 28m"},
-  {id: 4, url: "https://akamaividz2.zee5.com/image/upload/w_508,h_286,c_scale,f_webp,q_auto:eco/resources/0-0-1z5163808/list/1170x658withlogo9069e7913f174d439093530667c76e49.jpg", title: "Morbius", type: "Action", hrs: "1h 39m"},
-  {id: 5, url: "https://akamaividz2.zee5.com/image/upload/w_508,h_286,c_scale,f_webp,q_auto:eco/resources/0-0-1z5214627/list/1170x658withlogo530f03e3c0b04efd8d890ebdd8b3dde5.jpg", title: "Bullet Train", type: "Action", hrs: "2h 1m"},
-  {id: 6, url: "https://akamaividz2.zee5.com/image/upload/w_508,h_286,c_scale,f_webp,q_auto:eco/resources/0-0-1z5269848/list/1170x658withlogob80578802284405e90f6f2964f7b226d.jpg", title: "Strong Fathers, Strong Daughters", type: "Drama", hrs: "1h 30min"}
+  { id: 1, url: "https://akamaividz2.zee5.com/image/upload/w_508,h_286,c_scale,f_webp,q_auto:eco/resources/0-0-1z5234572/list/1170x658withlogo24b333694acb425e80ed532a1ee94469.jpg", title: "Spider-Man: No Way Home The Extended Version", type: "Adventure", hrs: "2h 29m" },
+  { id: 2, url: "https://akamaividz2.zee5.com/image/upload/w_508,h_286,c_scale,f_webp,q_auto:eco/resources/0-0-1z5214599/list/1170x658withlogof65c0a6f484e4151a7336f67cd7b8da0.jpg", title: "Jurassic World Dominion", type: "Sci-Fi", hrs: "2h 20m" },
+  { id: 3, url: "https://akamaividz2.zee5.com/image/upload/w_508,h_286,c_scale,f_webp,q_auto:eco/resources/0-0-1z5261867/list/ImageTitle450e3fa504774412943186baf00bdb6e.jpg", title: "Beast", type: "Adventure", hrs: "1h 28m" },
+  { id: 4, url: "https://akamaividz2.zee5.com/image/upload/w_508,h_286,c_scale,f_webp,q_auto:eco/resources/0-0-1z5163808/list/1170x658withlogo9069e7913f174d439093530667c76e49.jpg", title: "Morbius", type: "Action", hrs: "1h 39m" },
+  { id: 5, url: "https://akamaividz2.zee5.com/image/upload/w_508,h_286,c_scale,f_webp,q_auto:eco/resources/0-0-1z5214627/list/1170x658withlogo530f03e3c0b04efd8d890ebdd8b3dde5.jpg", title: "Bullet Train", type: "Action", hrs: "2h 1m" },
+  { id: 6, url: "https://akamaividz2.zee5.com/image/upload/w_508,h_286,c_scale,f_webp,q_auto:eco/resources/0-0-1z5269848/list/1170x658withlogob80578802284405e90f6f2964f7b226d.jpg", title: "Strong Fathers, Strong Daughters", type: "Drama", hrs: "1h 30min" }
 ]
 
 const Home = () => {
@@ -165,7 +165,7 @@ const Home = () => {
                 <div className='overview'>
                   <div className='back'>
                     <h2 className='trend-title'>{item.title}</h2>
-                    <Button>Watch Trailer</Button>
+                    <Link to={`/trendingdemo/${item.id}`}><Button>Watch Trailer</Button></Link>
                   </div>
                   <h3>Summary</h3>
                   {item.description}
@@ -186,7 +186,7 @@ const Home = () => {
                 <div className='overview'>
                   <div className='back'>
                     <h2 className='trend-title'>{item.title}</h2>
-                    <Button>Watch Trailer</Button>
+                    <Link to={`/moviedemo/${item.id}`}><Button>Watch Trailer</Button></Link>
                   </div>
                   <h3>Summary</h3>
                   {item.description}
@@ -204,7 +204,7 @@ const Home = () => {
             return (
               <div key={item.id} className="latest1">
                 <img src={item.src} alt={item.alt} />
-                <div style={{ textAlign: "left", marginTop: "3px", padding: "10px" }}>
+                <div style={{ textAlign: "left", marginTop: "3px", padding: "10px", backgroundColor:"#fff" }}>
                   <h4 style={{ fontWeight: "600" }}>{item.alt}</h4>
                   <h5 style={{ fontWeight: "600" }}>Watch</h5>
                 </div>
@@ -224,7 +224,7 @@ const Home = () => {
                 <div className='overview'>
                   <div className='back'>
                     <h2 className='trend-title'>{item.title}</h2>
-                    <Button>Watch Trailer</Button>
+                    <Link to={`/dramademo/${item.id}`}><Button>Watch Trailer</Button></Link>
                   </div>
                   <h3>Summary</h3>
                   {item.description}
@@ -258,7 +258,7 @@ const Home = () => {
                 <div className='overview'>
                   <div className='back'>
                     <h2 className='trend-title'>{item.title}</h2>
-                    <Button>Watch Trailer</Button>
+                    <Link to={`/webseriesdemo/${item.id}`}><Button>Watch Trailer</Button></Link>
                   </div>
                   <h3>Summary</h3>
                   {item.description}
@@ -276,9 +276,9 @@ const Home = () => {
             return (
               <div key={item.id} className="rent-watch">
                 <img src={item.url} alt={item.title} />
-                <div style={{ textAlign: "left", marginTop: "3px", padding: "10px", display:"flex", flexDirection:"column",background: "linear-gradient(270deg,#170e40 22.3%,#3b1c81 64.31%,#49104a)" }}>
+                <div style={{ textAlign: "left", marginTop: "3px", padding: "10px", display: "flex", flexDirection: "column", background: "linear-gradient(270deg,#170e40 22.3%,#3b1c81 64.31%,#49104a)" }}>
                   <h3>{item.title}</h3>
-                  <div style={{display:"flex", gap:"10px"}}>
+                  <div style={{ display: "flex", gap: "10px" }}>
                     <li>Type: {item.type}</li>
                     <li>Duration: {item.hrs}</li>
                   </div>

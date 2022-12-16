@@ -1,4 +1,11 @@
-import { Box, Heading, FormControl, Input, Button } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  FormControl,
+  Input,
+  Button,
+  FormHelperText,
+} from "@chakra-ui/react";
 import React, { useState } from "react";
 import { Form } from "react-router-dom";
 import { addReq_Products } from "../utils";
@@ -12,11 +19,26 @@ const initState = {
 
 const AddProductForm = () => {
   const [formData, setFormData] = useState(initState);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(true);
 
   //   on change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+
+    // Button disabled if any one of the data is missing in the form
+    if (
+      formData.title === "" ||
+      formData.poster === "" ||
+      formData.trailer === "" ||
+      formData.description === ""
+    ) {
+      setIsDisabled(true);
+    } else {
+      setIsDisabled(false);
+    }
   };
 
   //   on submit
@@ -34,6 +56,9 @@ const AddProductForm = () => {
 
       {/* Form- Product Description to add product */}
       <FormControl>
+        <FormHelperText color="red">
+          All fields are mandatory while adding products
+        </FormHelperText>
         <Box mb="20px">
           <Input
             variant="flushed"
@@ -70,7 +95,13 @@ const AddProductForm = () => {
             onChange={(e) => handleChange(e)}
           />
         </Box>
-        <Button type="submit" onClick={handleSubmit} colorScheme="green">
+        <Button
+          type="submit"
+          onClick={handleSubmit}
+          colorScheme="green"
+          isLoading={loading}
+          disabled={isDisabled}
+        >
           ADD PRODUCT
         </Button>
       </FormControl>

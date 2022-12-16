@@ -28,7 +28,7 @@ const responsive = {
     }
 };
 
-function CarouselDemo({ data }) {
+function DramasDemo({ data }) {
     let { Id } = useParams();
 
     let temp = data.filter((item) => {
@@ -177,4 +177,4 @@ function CarouselDemo({ data }) {
     )
 }
 
-export default CarouselDemo;
+export default DramasDemo;
