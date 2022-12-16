@@ -5,7 +5,7 @@ import "./navbar.css";
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi"
 import "./navbar.css"
-import { Link } from 'react-router-dom'
+
 
 
 
