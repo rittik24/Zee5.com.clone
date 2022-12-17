@@ -4,7 +4,7 @@ import React from "react";
 const MySubscription = () => {
   return (
     // to fill the screen kept h=28.5vmax
-    <Box h="30vmax" bgColor="gray.900" px="1%" py="2%">
+    <Box h="100vmax" bgColor="gray.900" px="1%" py="2%">
       <Heading as="h2" size="md" textAlign="center">
         My Subscription
       </Heading>

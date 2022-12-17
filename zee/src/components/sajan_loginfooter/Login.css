@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* background-color: #11051C; */
+    background-color: #11051C;
 }
 
 .main {
@@ -11,7 +11,8 @@
     /* border: 1px solid green; */
     height: auto;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 55px;
+    text-align: center;
 }
 
 .login-logo {
@@ -36,10 +37,11 @@
     border: none;
     padding: 5px 10px;
 }
-
-input[type=text],
-[type=password],
-[type=tel] {
+.google-btn:hover{
+    cursor: pointer;
+}
+input[type=email],
+[type=password] {
     outline: none;
     color: white;
     border: none;
@@ -137,4 +139,40 @@ background-color: white;
     
 form {
     margin-bottom: 20px;
+}
+@media (max-width:768px) {
+    .login-logo {
+        width: 69.5%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;  
+        margin-top: 40px;
+        margin-bottom: 27px;
+    }
+    .login-logo >div{
+    margin-bottom: 20px;
+    }
+    .main {
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid green; */
+        height: auto;
+        margin: auto;
+        margin-top: 55px;
+        text-align: center;
+    }
+}
+@media (min-width:769px)  and (max-width:1000px){
+    .login-logo {
+        width: 69.5%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;  
+        margin-top: 40px;
+        margin-bottom: 27px;
+    }
+    .login-logo >div{
+        margin-bottom: 20px;
+        }
 }
