@@ -11,16 +11,16 @@
     /* border: 1px solid green; */
     height: auto;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .login-logo {
     width: 69.5%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: auto;
-    margin-top: 45px;
-    margin-bottom: 30px;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;  
+    margin-top: 40px;
+    margin-bottom: 27px;
 }
 
 .welcome {
@@ -34,7 +34,7 @@
     border-radius: 50%;
     background-color: rgb(40, 32, 48);
     border: none;
-    padding: 10px 12px;
+    padding: 5px 10px;
 }
 
 input[type=text],
@@ -46,7 +46,7 @@ input[type=text],
     background: none;
     border-bottom: 1px solid gray;
     width: 100%;
-    height: 25px;
+    height: 23px;
     background: transparent;
     background-color: #11051C;
 }
@@ -56,7 +56,7 @@ input[type=text],
     margin-top: 30px;
     font-size: 12px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px;  
     color: gray;
 
 }
@@ -64,17 +64,18 @@ input[type=text],
 .forgot {
     margin-top: 60px;
     color: #a785ff;
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 13px;
 }
 
 input[type=submit] {
+
     width: 100%;
     color: #74798b;
     border: 1px solid;
     padding: 15px;
     border-radius: 8px;
-    margin-top: 50px;
+    margin-top: 40px;
     font-weight: bold;
 }
 
@@ -92,26 +93,48 @@ input[type=submit]:hover {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 55px;
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    
 }
 
-.login-logo-google>div img {
+.login-logo-google>div img{
+background-color: white;
+}
+ .login-logo-google>div+div span{
     background-color: white;
-}
+    color: #d6006b;
+    font-weight: 500;
+    padding: 8px;
+    }
+    .login-logo-google>div{
+        padding: 5px 0px;
 
-.login-logo-google>div+div span {
-    background-color: white;
-}
-
-.reg-or {
+    }
+   .reg-or{
     color: white;
     border-radius: 50%;
     background-color: #450948;
     border: none;
-    padding: 10px 12px;
-    margin-top: 60px;
-}
-
+    padding: 5px 10px;
+    margin-top: 40px;
+   } 
+   .existing{
+    margin-top: 13px;
+    font-size: 13px;
+   }
+   .existing>span+span{
+    color: #a785ff;
+   }
+   /* .heading{
+    font-weight: bold;
+   } */
+   .cancle{
+    margin-left: 800px;
+    color: gray;
+   }
+    
 form {
     margin-bottom: 20px;
 }

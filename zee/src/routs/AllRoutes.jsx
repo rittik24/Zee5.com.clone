@@ -12,7 +12,11 @@ import TVShows from "../components/anirudh_home/TVShows";
 import Buyplan from "../components/moumita_buyplan/Buyplan";
 import UserDashboard from "../components/aniket_details/UserDashboard";
 import AdminDashboard from "../components/aniket_details/AdminDashboard";
+
 import Payment from "../components/moumita_buyplan/Payment";
+
+import Register from "../components/sajan_loginfooter/Register";
+
 
 export default function AllRoutes() {
     const [carousel, setCarousel] = useState([]);
@@ -54,6 +58,7 @@ export default function AllRoutes() {
       <Route path="/trendingdemo/:Id" element={<TrendingDemo data={trending} />}></Route>
       <Route path="/userdashboard" element={<UserDashboard />}></Route>
       <Route path="/admindashboard" element={<AdminDashboard />}></Route>
+
       <Route path="/tvshows" element={<TVShows />}></Route>
       <Route path="/subscription" element={<Buyplan />}></Route>
       <Route path="/subscription/payment" element={<Payment />}></Route>
