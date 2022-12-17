@@ -26,6 +26,7 @@ const Login = () => {
     catch(err){
 
           alert(err.message)
+          
     }
   }
   const googleAuth=async(e)=>{
@@ -48,7 +49,7 @@ const Login = () => {
     <div  >
       <div className='main'>
       <Link to="/" className='cancle'><SmallCloseIcon/></Link>
-      <div><h4 style={{color:"white"}}>Login to ZEE5</h4></div>
+      <div><h4 >Login to ZEE5</h4></div>
       <div ><p className='welcome'>Login to continue enjoying uninterrupted video and personalised experience.</p></div>
       <div className='login-logo'>
         <div> <img src="https://www.zee5.com/images/apple-social-icon-circle.svg?ver=2.52.64" alt="" /></div>
@@ -58,7 +59,7 @@ const Login = () => {
       </div>
       <div><button className='or'>or</button></div>
       <div className='login-input'>
-        <p >Email ID Or Mobile Number</p>
+        <p >Email ID</p>
         <form  onSubmit={handleSubmit}>  
            <input type="email" onChange={(e)=>setEmail(e.target.value)} value={email}/>
            <p>Password</p>

@@ -1,0 +1,190 @@
+
+#footer{
+    height: auto;
+    background-color: #0f0617;
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+}
+
+#footer a:hover{
+    color: deeppink;
+}
+
+#footer a {
+    color: hsla(0,0%,100%,.5);
+}
+
+#footer p, h4{
+    color: #ffffff;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+.row > .footer-col{
+    margin-top: 10px;
+}
+.footer-col>div{
+    margin-top:16px;
+}
+.end{
+    margin: 3% 0 1% 0;
+    font-size: 13px;
+    color:hsla(0,0%,100%,.5) ;
+} 
+footer h3{
+    font-weight: 20px;
+    color: white;
+}
+.logDiv{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.logo h4{
+    margin-right: 10px;
+}
+.logo a{
+    margin-right: 10px;
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;    
+} 
+
+.leftlogo{    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;  
+}
+.leftlogo a{
+    margin-left: 10px    
+}
+a{
+    text-decoration:none;
+}
+.logo-On{
+    width:40px;
+    height:40px;
+}
+.about{
+    width:40%;
+    margin:20px auto ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    
+}
+footer p{
+    text-align: center;
+    font-size: 11px;
+    
+}
+.topFooter{
+    
+    height: 210px;  
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    margin-top:50px;
+    margin-bottom:50px;
+
+}
+footer h4{
+    margin-top: 10px;
+}
+.leftlogo a{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(37, 35, 35);
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.leftlogo i{
+    font-size: 15px;
+    color: bisque;
+}
+.leftlogo h4{
+    margin-top: 0px;
+}
+.leftlogo .fb:hover{
+    background-color: blue;
+    cursor: pointer;
+    
+}
+.leftlogo .insta:hover{
+    background-color: rgb(211, 12, 128);
+    cursor: pointer;
+}
+.leftlogo .twitter:hover{
+    background-color: rgb(20, 153, 230);
+    cursor: pointer;
+}
+.leftlogo .youtube:hover{
+    background-color: rgb(252, 47, 10);
+    cursor: pointer;
+}
+@media all and (min-width:51px ) and (max-width: 381px){
+    .about{
+        width:80%;
+        margin:20px auto ;
+        display: flex;
+        flex-wrap: wrap;        
+        justify-content: space-between;
+        
+    }
+    .leftlogo{
+        margin-top: 20px;
+        flex-wrap: nowrap;
+    }
+    .logo > h4{
+        display: none;
+        
+    }
+    .leftlogo > h4{
+        display: none;
+        
+    }
+    .leftlogo a{
+        margin-right: 10px    
+    }
+
+}
+
+@media all and (min-width:380px ) and (max-width: 981px){
+    .about{
+        width:80%;
+        margin:20px auto ;
+        display: flex;
+        flex-wrap: wrap;        
+        justify-content: space-between;
+        
+    }
+    .leftlogo{
+        margin-top: 20px;
+        flex-wrap: nowrap;
+    }
+    .logo{
+        flex-wrap: nowrap;
+    }
+}
