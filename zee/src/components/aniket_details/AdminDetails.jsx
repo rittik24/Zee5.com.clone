@@ -7,6 +7,7 @@ import {
   Text,
   Flex,
   Spacer,
+  Link,
 } from "@chakra-ui/react";
 import React from "react";
 
@@ -23,7 +24,13 @@ const AdminDetails = () => {
       alignItems="center"
       paddingInline="2%"
       py="1%"
-      direction={{base:"column",sm:"column",md:"row",lg:"row",xl:"row"}}
+      direction={{
+        base: "column",
+        sm: "column",
+        md: "row",
+        lg: "row",
+        xl: "row",
+      }}
     >
       {/* Admin Prof-pic */}
       <Box>
@@ -50,7 +57,9 @@ const AdminDetails = () => {
       <Spacer />
 
       {/* Reports */}
-      <Button colorScheme="blue">Reports</Button>
+      <Link href="/admindashboard/admins">
+        <Button colorScheme="blue">Reports</Button>
+      </Link>
 
       {/* Keep it form now don't delete */}
       {/* <Flex gap="10px" w="-moz-fit-content"> */}
