@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Buyplan.css";
 import { AiOutlineCheck } from "react-icons/ai";
 import { CiPercent } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 // const bgc={background:""}
 // const bgcc={background:"#2C2136"}
@@ -126,7 +127,9 @@ const Buyplan = () => {
             <div>
               <p>Pay useing UPI</p>
             </div>
-            <button className="btnb">Buy Premium</button>
+            <Link to='/subscription/payment'> <button className="btnb">Buy Premium</button></Link>
+   
+
           </div>
         </div>
 
