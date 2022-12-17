@@ -13,6 +13,8 @@ import Buyplan from "../components/moumita_buyplan/Buyplan";
 import UserDashboard from "../components/aniket_details/UserDashboard";
 import AdminDashboard from "../components/aniket_details/AdminDashboard";
 import About from "../components/rittik_navbar/About";
+import Register from "../components/sajan_loginfooter/Register";
+
 
 export default function AllRoutes() {
     const [carousel, setCarousel] = useState([]);
