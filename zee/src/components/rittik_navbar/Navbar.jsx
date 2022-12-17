@@ -50,7 +50,7 @@ function Navbar() {
         <Box className="NavbarSecondPartV-Lan" ><Flex><Text>A</Text><Text className="NavbarSecondPartV-LanHindi">अ</Text></Flex> </Box>
 
         <Link to='/admindashboard'> <button className='admin-button'>ADMIN</button></Link>
-        {/* <Link to='/login'><button className='login-button'>LOGIN</button></Link> */}
+        {/* <Link to='/login'><button className='login-button'>LOGOUT</button></Link> */}
         <Link to='/login'><button className='login-button'>LOGIN</button></Link>
         <Link to='/subscription'><button className='buy-button'>BUY PLAN</button></Link>
         <Flex alignItems="center" className="hum-Menu" >
