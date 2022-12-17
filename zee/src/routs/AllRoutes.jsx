@@ -77,14 +77,16 @@ export default function AllRoutes() {
       ></Route>
       <Route path="/userdashboard" element={<UserDashboard />}></Route>
       <Route path="/admindashboard" element={<AdminDashboard />}></Route>
-      <Route path="/userdashboard" element={<UserDashboard />}></Route>
+      <Route  path="/register" element={<Register/>}></Route>
+      
       <Route path="/admindashboard/admins" element={<Reports />}></Route>
-      <Route path="/tvshows" element={<TVShows />}></Route>
-      <Route path="/subscription" element={<Buyplan />}></Route>
+      
+     
       <Route path="/About" element={<About />}></Route>
       <Route path="/tvshows" element={<TVShows />}></Route>
       <Route path="/subscription" element={<Buyplan />}></Route>
       <Route path="/subscription/payment" element={<Payment />}></Route>
+
     </Routes>
   );
 }

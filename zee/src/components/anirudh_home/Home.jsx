@@ -143,7 +143,7 @@ const Home = () => {
 
   return (
     <div>
-      <div style={{ width: "96%", margin: "auto", marginTop: "32px" }}>
+      <div style={{ width: "90%", margin: "auto", marginTop: "32px" }}>
         <Slider {...settings1}>
           {carousel.map((item) => (
             <Link to={`/Carousel/${item.id}`}><img key={item.id} className="slide1" src={item.poster} alt={item.title} /></Link>
