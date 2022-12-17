@@ -35,6 +35,15 @@ const MyTransactions = () => {
         <ListItem>Payment Date : 1 January 2020, at 9:33 PM</ListItem>
         <ListItem>Plan : Premium HD</ListItem>
       </List>
+      {/* Transaction - 4 */}
+      <List spacing={3} textAlign="left" my="1%" bgColor="gray.700" p="1%">
+        <ListItem>
+          Transaction ID : BIL/ONL/001844836345/One RazorPay/26433492421
+        </ListItem>
+        <ListItem>Amount : Rs 699</ListItem>
+        <ListItem>Payment Date : 1 January 2020, at 9:33 PM</ListItem>
+        <ListItem>Plan : Premium HD</ListItem>
+      </List>
     </Box>
   );
 };
