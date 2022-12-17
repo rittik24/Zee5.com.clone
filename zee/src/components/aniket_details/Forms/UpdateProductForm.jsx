@@ -1,13 +1,4 @@
-import {
-  Box,
-  Button,
-  FormControl,
-  Heading,
-  Input,
-  Form,
-  FormHelperText,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Heading, Input, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { patchReq_Products } from "../utils";
 
@@ -17,6 +8,7 @@ const UpdateProductForm = () => {
   const [formData, setFormData] = useState(initState);
   const [id, setID] = useState("");
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   //   on change
   const handleChange = (e) => {
@@ -27,15 +19,16 @@ const UpdateProductForm = () => {
   //   on submit
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
 
+    setLoading(true);
     patchReq_Products(id, formData)
       .then((res) => {
         setLoading(false);
         alert("Details updated successfully");
       })
       .catch((err) => {
-        console.log(err);
+        setError(true);
+        setLoading(false);
         alert("Network update request failed");
       });
 
@@ -51,7 +44,7 @@ const UpdateProductForm = () => {
 
       {/* Form- Product Description to update product */}
       <form onSubmit={(e) => handleSubmit(e)}>
-        <Text color="red">Product ID is mandatory to update the product</Text>
+        <Text color="red">Product ID is mandatory to update a product.</Text>
 
         <Box mb="20px">
           <Input
@@ -103,6 +96,7 @@ const UpdateProductForm = () => {
           type="submit"
           colorScheme="blue"
           isLoading={loading}
+          loadingText="SUBMITTING"
           disabled={id === ""}
         >
           UPDATE

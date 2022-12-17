@@ -17,13 +17,16 @@ const AdminDetails = () => {
     // main container
     <Flex
       border="0px solid red"
+      bgColor="red.900"
       h="100%"
       justifyContent="center"
       alignItems="center"
       paddingInline="2%"
+      py="1%"
+      direction={{base:"column",sm:"column",md:"row",lg:"row",xl:"row"}}
     >
       {/* Admin Prof-pic */}
-      <Box w="-moz-fit-content">
+      <Box>
         <Avatar
           size="xl"
           name="Aniket Pandey"
