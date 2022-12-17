@@ -22,15 +22,23 @@ const UserContent = () => {
   };
 
   return (
-    <Flex>
+    <Flex direction={{ base: "column", sm: "column", md: "row", lg: "row" }}>
       {/* Options in side bar */}
-      <Box
-        border="0px solid red"
-        w="15%"
-        textAlign="left"
-        px="2%"
-        py="3%"
+      <Flex
+        // border="1px solid red"
         bgColor="gray.1000"
+        textAlign="left"
+        direction={{ base: "row", sm: "row", md: "column", lg: "column" }}
+        justifyContent={{
+          base: "space-between",
+          sm: "space-between",
+          md: "center",
+          lg: "center",
+        }}
+        w={{ base: "100%", sm: "100%", md: "25%", lg: "20%" }}
+        px="2%"
+        py={{ base: "3%", sm: "3%", md: "3%", lg: "3%" }}
+        h={{ base: "70px", sm: "70px", md: "100%", lg: "100%" }}
       >
         <Text
           cursor="pointer"
@@ -76,10 +84,13 @@ const UserContent = () => {
         >
           My Transactions
         </Text>
-      </Box>
+      </Flex>
 
       {/* Info of respective active option */}
-      <Box w="85%" border="0px solid red">
+      <Box
+        w={{ base: "100%", sm: "100%", md: "100%", lg: "85%" }}
+        border="0px solid red"
+      >
         {activeMenu.MyProfile && <MyProfile />}
         {activeMenu.MyWatchlist && <MyWatchlist />}
         {activeMenu.MySubscription && <MySubscription />}
