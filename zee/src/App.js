@@ -2,9 +2,6 @@
 import './App.css';
 import Navbar from './components/rittik_navbar/Navbar';
 import AllRoutes from './routs/AllRoutes';
-import "./App.css";
-
-
 function App() {
   return (
     <div className="App">
@@ -14,6 +11,8 @@ function App() {
 
     </div>
   );
+  
+  
 }
 
 export default App;
