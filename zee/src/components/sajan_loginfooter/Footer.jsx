@@ -15,7 +15,7 @@ const Footer = () => {
             
             <div class="logo">
             
-            <h4>Download Apps</h4>            
+            <h4 className='downloadApps'>Download Apps</h4>            
                 <a href="https://play.google.com/store/apps/details?id=com.graymatrix.did"><img src="https://www.zee5.com/images/play_store.png?ver=2.50.94"/></a>
                 <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886"><img src="https://www.zee5.com/images/app_store.png?ver=2.50.94"/></a>
             </div>

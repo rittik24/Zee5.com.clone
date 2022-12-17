@@ -76,7 +76,7 @@ export default function AllRoutes() {
         element={<TrendingDemo data={trending} />}
       ></Route>
       <Route path="/userdashboard" element={<UserDashboard />}></Route>
-      <Route path="/admindashboard" element={<AdminDashboard />}></Rou
+      <Route path="/admindashboard" element={<AdminDashboard />}></Route>
       <Route  path="/register" element={<Register/>}></Route>
       
       <Route path="/admindashboard/admins" element={<Reports />}></Route>
