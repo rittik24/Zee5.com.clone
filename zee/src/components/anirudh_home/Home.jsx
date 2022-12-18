@@ -78,7 +78,7 @@ const responsive3 = {
     breakpoint: { max: 1000, min: 0 },
     items: 1
   }
-}
+};
 
 const Languages = [
   { id: 1, url: "https://akamaividz2.zee5.com/image/upload/w_522,h_294,c_scale,f_webp,q_auto:eco/resources/0-8-3z5258169/list/teluguplatformlanguage1170x65823112022653f2fbb4e034f758f686e45668b99b9.jpg", alt: "Telugu" },
@@ -146,7 +146,9 @@ const Home = () => {
       <div style={{ width: "90%", margin: "auto", marginTop: "32px" }}>
         <Slider {...settings1}>
           {carousel.map((item) => (
-            <Link to={`/Carousel/${item.id}`}><img key={item.id} className="slide1" src={item.poster} alt={item.title} /></Link>
+            <div key={item.id}>
+              <Link  to={`/Carousel/${item.id}`}><img className="slide1" src={item.poster} alt={item.title} /></Link>
+            </div> 
           ))}
         </Slider>
       </div>
@@ -159,9 +161,7 @@ const Home = () => {
             return (
               <div key={item.id} className='trend-products'>
                 <img src={item.poster} alt={item.title} />
-                {/* <div className='trend-title'>
-                  <h2>{item.title}</h2>
-                </div> */}
+                
                 <div className='overview'>
                   <div className='back'>
                     <h2 className='trend-title'>{item.title}</h2>
@@ -278,9 +278,11 @@ const Home = () => {
                 <img src={item.url} alt={item.title} />
                 <div style={{ textAlign: "left", marginTop: "3px", padding: "10px", display: "flex", flexDirection: "column", background: "linear-gradient(270deg,#170e40 22.3%,#3b1c81 64.31%,#49104a)" }}>
                   <h3>{item.title}</h3>
-                  <div style={{ display: "flex", gap: "10px" }}>
+                  <div >
+                    <ul style={{ display: "flex", gap: "10px", listStyle:"none" }}>
                     <li>Type: {item.type}</li>
                     <li>Duration: {item.hrs}</li>
+                    </ul>
                   </div>
                 </div>
               </div>
