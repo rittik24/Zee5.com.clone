@@ -164,7 +164,7 @@ function TVShows() {
 
     return (
         <div>
-            <div style={{ width: "96%", margin: "auto", marginTop: "32px" }}>
+            <div style={{ width: "90%", margin: "auto", marginTop: "32px" }}>
                 <Slider {...settings1}>
                     {slide2.map((item) => (
                         <img key={item.id} className="slide1" src={item.url} alt={item.alt} />

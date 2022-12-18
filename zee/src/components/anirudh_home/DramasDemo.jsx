@@ -39,7 +39,7 @@ function DramasDemo({ data }) {
 
 
     return (
-        <div>
+        <div style={{marginTop:"20px"}}>
             <div className="demotrailer-container">
                 <div className="det1">
                     <h1 style={{ textAlign: "left", fontSize: "2rem" }}>You are watching a trailer</h1>
