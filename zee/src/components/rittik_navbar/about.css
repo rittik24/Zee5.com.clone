@@ -1,0 +1,32 @@
+.about-main{
+    text-align: center;
+}
+.about-main h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.about-main p{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 50px 10px 50px;
+}
+.aboutus{
+    display: flex;
+    width: 90%;
+    height: 500px;
+    /* border: 2px solid red; */
+    margin: auto;
+}
+.aboutus div{
+    width: 17% ;
+    height: 400px;
+    margin: auto;
+/* border: 2px solid green; */
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.aboutus div h1{
+    color: teal;
+    font-size: 20px;
+    margin-top: 5px;
+}
