@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-
+import React, { useContext, useState } from 'react'
+import { authContext } from '../../routs/AuthContext';
 import {
   Box, Text, Flex, Button, Drawer, DrawerOverlay, DrawerContent,
   DrawerHeader, DrawerBody, useDisclosure
@@ -54,12 +54,13 @@ const admin= [
 
 
 function Navbar() {
-  let temp = localStorage.getItem("token");
   const [barsIcon, setBarsIcon] = useState("block");
   const [navs, setNavs] = useState("none");
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const [change, setChange] = useState(temp);
-  console.log(change);
+  const {state, handlelogout} = useContext(authContext);
+
+  // console.log(change, token)
+  
   function bars() {
     setBarsIcon("none");
     setNavs("flex");
@@ -69,10 +70,7 @@ function Navbar() {
     setNavs("none");
     setBarsIcon("block");
   }
-  function handleLogout(){
-    localStorage.removeItem("token")
-    setChange("")
-  }
+  
   // change.includes("zee");
 
   return (
@@ -96,12 +94,11 @@ function Navbar() {
         <i class="fas fa-download"></i>
 
         <Box className="NavbarSecondPartV-Lan" ><Flex><Text>A</Text><Text className="NavbarSecondPartV-LanHindi">अ</Text></Flex> </Box>
-        {change==undefined ? null: change.includes("zee") ? <Link to='/admindashboard'> <button className='admin-button'>ADMIN</button></Link> :
+        {state.isAuth == false ? null: state.token.includes("zee") ? <Link to='/admindashboard'> <button className='admin-button'>ADMIN</button></Link> :
         <Link to='/userdashboard'> <button className='admin-button'>USER</button></Link> } 
       
         
-          {change==undefined ? <Link to='/login'><button className='login-button'>
-         LOGIN </button></Link> : <Link to='/login'><button className='login-button' onClick={handleLogout}>LOGOUT</button></Link>}
+          {state.isAuth == true ? <Link to='/login'><button className='login-button' onClick={handlelogout}>LOGOUT</button></Link> : <Link to='/login'><button className='login-button'>LOGIN </button></Link> }
         
         <Link to='/subscription'><button className='buy-button'>BUY PLAN</button></Link>
       </div>

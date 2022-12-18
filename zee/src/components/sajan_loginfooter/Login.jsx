@@ -1,14 +1,16 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import './Login.css'
 import {SmallCloseIcon} from '@chakra-ui/icons';
 import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider,signInWithPopup } from "firebase/auth";
 import { auth } from '../../firebase';
 import { Link,useNavigate,Navigate} from "react-router-dom";
+import { authContext } from '../../routs/AuthContext';
 import { async } from '@firebase/util';
 const Login = () => {
  const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
+  const {handlelogin} = useContext(authContext);
 
   const navigate=useNavigate()
   const handleSubmit=async (e)=>{
@@ -19,7 +21,7 @@ const Login = () => {
         alert(`Login Success through  ${user.user.email}`)
         console.log(user)
          localStorage.setItem("token",user.user.email)
-        
+         handlelogin(user.user.email);
         navigate("/")
     
     }
@@ -35,7 +37,7 @@ const Login = () => {
      let google= await  signInWithPopup(auth,new GoogleAuthProvider())
     alert(`Login Success through  ${google.user.email}`)
     localStorage.setItem("token",google.user.email)
-    
+    handlelogin(google.user.email);
     navigate('/')
      
     }

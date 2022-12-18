@@ -19,6 +19,7 @@ import Reports from "../components/aniket_details/Reports";
 import Moviespage from "../components/anirudh_home/Moviespage";
 import WebSeriesPage from "../components/anirudh_home/WebSeriesPage";
 import Newspage from "../components/anirudh_home/Newspage";
+import PrivateRoute from "./PrivateRoute";
 
 
 export default function AllRoutes() {
@@ -78,12 +79,11 @@ export default function AllRoutes() {
         path="/trendingdemo/:Id"
         element={<TrendingDemo data={trending} />}
       ></Route>
-      <Route path="/userdashboard" element={<UserDashboard />}></Route>
-      <Route path="/admindashboard" element={<AdminDashboard />}></Route>
+      <Route path="/userdashboard" element={<PrivateRoute><UserDashboard /></PrivateRoute>}></Route>
+      <Route path="/admindashboard" element={<PrivateRoute><AdminDashboard /></PrivateRoute>}></Route>
       <Route  path="/register" element={<Register/>}></Route>
       
       <Route path="/admindashboard/admins" element={<Reports />}></Route>
-      
      
       <Route path="/About" element={<About />}></Route>
       <Route path="/tvshows" element={<TVShows />}></Route>
@@ -91,7 +91,7 @@ export default function AllRoutes() {
       <Route path="/webseriespage" element={<WebSeriesPage />}></Route>
       <Route path="/newspage" element={<Newspage />}></Route>
       <Route path="/subscription" element={<Buyplan />}></Route>
-      <Route path="/subscription/payment" element={<Payment />}></Route>
+      <Route path="/subscription/payment" element={<PrivateRoute><Payment /></PrivateRoute>}></Route>
 
     </Routes>
   );
