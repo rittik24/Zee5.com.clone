@@ -9,14 +9,57 @@ import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi"
 
 
-
+const admin= [
+  {
+    "id": 1,
+    "type": "admin",
+    "_firstName": "Aniket",
+    "_lastName": "Pandey",
+    "email": "aniket.pandey@zee.com",
+    "token": "admin0001"
+  },
+  {
+    "id": 2,
+    "type": "admin",
+    "_firstName": "Anirudha",
+    "_lastName": "Mandal",
+    "email": "anirudha.mandal@zee.com",
+    "token": "admin0002"
+  },
+  {
+    "id": 3,
+    "type": "admin",
+    "_firstName": "Moumita",
+    "_lastName": "Das",
+    "email": "moumita.das@zee.com",
+    "token": "admin0003"
+  },
+  {
+    "id": 4,
+    "type": "admin",
+    "_firstName": "Ritik",
+    "_lastName": "Haldar",
+    "email": "ritik.haldar@zee.com",
+    "token": "admin0004"
+  },
+  {
+    "id": 5,
+    "type": "admin",
+    "_firstName": "Sajjan",
+    "_lastName": "Kumar",
+    "email": "sajjan.kumar@zee.com",
+    "token": "admin0005"
+  }
+]
 
 
 function Navbar() {
+  let temp = localStorage.getItem("token");
   const [barsIcon, setBarsIcon] = useState("block");
   const [navs, setNavs] = useState("none");
   const { isOpen, onOpen, onClose } = useDisclosure()
-
+  const [change, setChange] = useState(temp);
+  console.log(change);
   function bars() {
     setBarsIcon("none");
     setNavs("flex");
@@ -26,6 +69,11 @@ function Navbar() {
     setNavs("none");
     setBarsIcon("block");
   }
+  function handleLogout(){
+    localStorage.removeItem("token")
+    setChange("")
+  }
+  // change.includes("zee");
 
   return (
     <div className="navv">
@@ -48,10 +96,13 @@ function Navbar() {
         <i class="fas fa-download"></i>
 
         <Box className="NavbarSecondPartV-Lan" ><Flex><Text>A</Text><Text className="NavbarSecondPartV-LanHindi">अ</Text></Flex> </Box>
-
-        <Link to='/admindashboard'> <button className='admin-button'>ADMIN</button></Link>
-        {/* <Link to='/login'><button className='login-button'>LOGIN</button></Link> */}
-        <Link to='/login'><button className='login-button'>LOGIN</button></Link>
+        {change==undefined ? null: change.includes("zee") ? <Link to='/admindashboard'> <button className='admin-button'>ADMIN</button></Link> :
+        <Link to='/userdashboard'> <button className='admin-button'>USER</button></Link> } 
+      
+        
+          {change==undefined ? <Link to='/login'><button className='login-button'>
+         LOGIN </button></Link> : <Link to='/login'><button className='login-button' onClick={handleLogout}>LOGOUT</button></Link>}
+        
         <Link to='/subscription'><button className='buy-button'>BUY PLAN</button></Link>
       </div>
       <div className='hum'>
@@ -79,7 +130,6 @@ function Navbar() {
           </Drawer>
         </Flex>
       </div>
-
     </div>
   )
 }
