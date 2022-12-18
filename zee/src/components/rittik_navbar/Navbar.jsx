@@ -36,8 +36,8 @@ function Navbar() {
         <div className='navv-linkss' id="navv-links">
         <Link to='/'><h4>Home</h4></Link>
         <Link to='/tvshows'><h4>TV Shows</h4></Link>
-        <Link to='/'><h4>Movies</h4></Link>
-        <Link to='/'><h4>Web Series</h4></Link>
+        <Link to='/moviespage'><h4>Movies</h4></Link>
+        <Link to='/webseriespage'><h4>Web Series</h4></Link>
         <Link to='/'><h4>News</h4></Link>
       </div>
       <div className='navv-linkss' id="navv-link">
@@ -64,8 +64,8 @@ function Navbar() {
               <DrawerBody bgColor={"rgb(15,6,23)"} color={"white"} display={"grid"} gap={"10px"} className='hum-link'>
                 <Link to="./"> <p>HOME</p></Link>
                 <Link to="./tvshows"><p>TV Shows</p></Link>
-                <Link to="./"> <p>Movies</p></Link>
-                <Link to="./"> <p>Web Series</p></Link>
+                <Link to="./moviespage"> <p>Movies</p></Link>
+                <Link to="./webseriespage"> <p>Web Series</p></Link>
                 <Link to="./"> <p>News</p></Link>
                 <Link to="./subscription"><p>Plan</p></Link>
                 <Link to="./About"><p>About Us</p></Link>
