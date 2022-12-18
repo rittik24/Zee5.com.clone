@@ -1,6 +1,7 @@
 .payment-m{
-    border: 5px solid red;
-    background-color: aliceblue;
+    /* border: 5px solid red; */
+    /* background-color: aliceblue; */
+    background-color: #654085;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
@@ -15,7 +16,7 @@
     flex-direction: column;
     align-items: center;
 
-    border: 4px solid rgb(0, 187, 255);
+    /* border: 4px solid rgb(0, 187, 255); */
     width: 50%;
     height: 80vh;
 
@@ -26,18 +27,25 @@
 }
 .main-p{
     display: flex;
-    padding-top: 10px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 20px;
+border-radius: 0 0 10px 10px;
     justify-content: center;
     flex-direction: column;
-    border: 5px solid blue;
-    width: 50%;
+    /* border: 5px solid blue; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 60%;
 
 }
 .pre-p{
-    border: 5px solid rgb(234, 255, 0);
-    width: 50%;
+    /* border: 5px solid rgb(234, 255, 0); */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 60%;
     display: flex;
     padding: 10px;
+    border-radius: 10px 10px 0px 0;
+
    
     justify-content: space-between;
     background: #614385;  /* fallback for old browsers */
@@ -48,12 +56,88 @@
 }
 .btn-p{
     background-color: black;
-    color: antiquewhite;
-    padding: 12px;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 12px ;
     border-radius: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
 
+}
+
+
+/* model */
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    /* padding: 10px 20px; */
+    display: block;
+    /* margin: 100px auto 0; */
+    /* font-size: 18px; */
+
+    background-color: black;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 12px ;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+    color: black;
+}
+
+.close-modal {
+    /* margin-top: 10px; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    /* background-color: black; */
+    color: #ffffff;
+    color: black;
+}
+.input-pay{
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    background-color: #f1f1f1;
+    color:#ffffff
+}
+.btn-payment{
+    margin-top: 5px;
+    background-color: black;
+    color: #ffffff;
+    padding:8px 12px;
+    border-radius: 10px ;
 }
