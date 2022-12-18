@@ -88,8 +88,6 @@ function Navbar() {
         <div className='input-div'>
           <i className="fas fa-search"></i>
 
-          <input type="text" placeholder='Search for Movies ,Shows etc..'/>
-
           <input type="text" placeholder='Search for Movies ,Shows etc..' />
 
         </div>
