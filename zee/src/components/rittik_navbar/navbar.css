@@ -15,6 +15,7 @@
     transition-timing-function: ease-in;
     transition: all 0.5s;
     /* border-bottom: 0.5px solid white; */
+    align-items: center;
 }
 
 .navv-linkss {
@@ -143,21 +144,65 @@
 
 @media screen and (max-width: 1200px) {
     .navv {
-       
-        padding: 10px 15px;
+       display: flex;
+        padding: 10px 25px;
         gap: 5px;
+        z-index: 1;
+        align-items: center;
+        justify-content: space-between;
     }
     .navv-linkss {
         display: none;
     }
     .imgg {
+        
         width: 80px;
         height: 40px;
         margin-top: 15px;
        z-index: 1;
+       justify-items: left;
+       align-items: flex-start;
+    }
+    .hum{
+        margin-top: 10px;
     }
     .hum-Menu {
         color: white;
         background-color: rgb(92, 22, 149);
+    }
+    .hum-link a p:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: 3px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .navv {
+       display: flex;
+        padding: 10px 20px;
+        gap: 5px;
+        z-index: 1;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    .navv-linkss {
+        display: none;
+    }
+    .imgg {
+        
+        width: 80px;
+        height: 40px;
+        margin-top: 15px;
+       z-index: 1;
+       justify-items: left;
+       align-items: flex-start;
+    }
+    .hum-Menu {
+        color: white;
+        background-color: rgb(92, 22, 149);
+    }
+    .hum-link a p:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: 3px;
     }
 }
