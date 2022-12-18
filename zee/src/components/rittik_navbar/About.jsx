@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div>
         <img src="https://avatars.githubusercontent.com/u/97180521?v=4" alt="moumita" />
-        <a href="https://github.com/Moumita7"> <h1>Moumita Das</h1></a>
+        <a href="https://moumita7.github.io/"> <h1>Moumita Das</h1></a>
           <h3>Worked on BuyPlan page by using HTML CSS  React-icon and Chakra-UI</h3>
         </div>
         <div>
