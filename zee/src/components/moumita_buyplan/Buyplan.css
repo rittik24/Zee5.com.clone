@@ -143,7 +143,10 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0
     color: #0F0617;
     border-radius: 10px;
 }
+.spre{
+    background-color: #8230C6;
 
+}
 
 
 .fpre:hover,.spre:hover,.tpre:hover{
@@ -172,4 +175,44 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0
 .pre-conb{
     /* border:  1px solid red; */
     margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* model */
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    /* padding: 10px 20px; */
+    display: block;
+    /* margin: 100px auto 0; */
+    /* font-size: 18px; */
+
+ background-color: black;
+    border-radius: 10px;
+    color: #ffffff; 
+    padding: 12px ;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
 }

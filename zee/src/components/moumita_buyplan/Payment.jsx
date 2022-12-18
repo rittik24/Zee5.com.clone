@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import GooglePayButton from "@google-pay/button-react"
 import "./Payment.css";
-
+// import {AiOutlineCloseSquare} from "react-icons/ai";
 
 
 const Payment = () => {
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
+  if(modal) {
+    document.body.classList.add('active-modal')
+  } else {
+    document.body.classList.remove('active-modal')
+  }
   return (
     <div className='payment-m'>
-    {/* <h1 className='pay-h'>Make Payment</h1> */}
+
     <div>
     <div className='pre-p'>
     <div> <h3  style={{color:"black",fontSize:"20px"}}>Make Payment</h3></div>
@@ -57,7 +68,24 @@ const Payment = () => {
 {/* <h3 style={{color:"black"}}>UPI</h3>
 <h3 style={{color:"black"}}>UPI</h3>
 <h3 style={{color:"black"}}>UPI</h3> */}
-<button className='btn-p'>UPI</button>
+<button className='btn-p , btn-modal' onClick={toggleModal} >UPI</button>
+{modal && (
+        <div className="modal">
+          <div onClick={toggleModal} className="overlay"></div>
+          <div className="modal-content">
+            <h2>UPI ID/VPA</h2>
+            <input type="text" name="" id="" placeholder='e.g moumita@upi' className='input-pay'  />
+            {/* <hr /> */}
+
+            <p> A collect request will be sent to this UPI ID</p>
+            <button className='btn-payment' onClick={toggleModal}>paynow</button>
+            {/* <AiOutlineCloseSquare className="close-modal" onClick={toggleModal}/> */}
+            <button className="close-modal" onClick={toggleModal}>
+              CLOSE
+            </button>
+          </div>
+        </div>
+      )}
 <button className='btn-p'>Credit/Debit Card</button>
 <button className='btn-p'>Wallets</button>
 <button className='btn-p'>Netbanking</button>
