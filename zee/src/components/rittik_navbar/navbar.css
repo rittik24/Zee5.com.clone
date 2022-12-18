@@ -6,7 +6,7 @@
     z-index: 1;
     display: flex;
     gap: 10px;
-    justify-content: center;
+    justify-content:space-around;
     padding: 5px;
     background-color: rgb(15, 6, 23);
     margin-bottom: 20px;
