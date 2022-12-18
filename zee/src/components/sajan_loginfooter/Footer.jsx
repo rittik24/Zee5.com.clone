@@ -5,33 +5,33 @@ const Footer = () => {
   return (
     
     <footer id="footer">
-    <div class="container">
+    <div className="container">
         
 
         
         <hr style={{height:"0.5px",borderWidth:"0",color:"gray",backgroundColor:"rgb(32, 28, 28)",marginTop: "15px",}}/>
         
         <br/>
-        <div class="logDiv">
+        <div className="logDiv">
             
-            <div class="logo">
+            <div className="logo">
             
             <h4 className='downloadApps'>Download Apps</h4>            
                 <a href="https://play.google.com/store/apps/details?id=com.graymatrix.did"><img src="https://www.zee5.com/images/play_store.png?ver=2.50.94"/></a>
                 <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886"><img src="https://www.zee5.com/images/app_store.png?ver=2.50.94"/></a>
             </div>
-            <div class="leftlogo">
+            <div className="leftlogo">
                 <h4>Connect with us</h4>
                 
-                <a href="https://www.facebook.com/ZEE5/" class="fb"> <FaFacebookSquare/></a>
-                <a href="https://www.instagram.com/zee5/" class="insta"><FaInstagramSquare/></a> 
-                <a href="https://twitter.com/zee5india" class="twitter"><FaTwitterSquare/></a> 
-                <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ" class="youtube"><FaYoutube/></a> 
+                <a href="https://www.facebook.com/ZEE5/" className="fb"> <FaFacebookSquare/></a>
+                <a href="https://www.instagram.com/zee5/" className="insta"><FaInstagramSquare/></a> 
+                <a href="https://twitter.com/zee5india" className="twitter"><FaTwitterSquare/></a> 
+                <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ" className="youtube"><FaYoutube/></a> 
                 
             </div>
         </div>
        
-       <div class="about">
+       <div className="about">
         {/* <!-- about --> */}
       
         <p><a href="">About Us</a></p>
@@ -47,8 +47,8 @@ const Footer = () => {
         
 
         </div>
-        <div class="row">
-            <div class="footer-col">
+        <div className="row">
+            <div className="footer-col">
                 <h3>Popular TV Shows</h3>
                 
                  
@@ -61,7 +61,7 @@ const Footer = () => {
                     
                 
             </div>
-            <div class="footer-col">
+            <div className="footer-col">
              <h3>Premium Movies</h3>
              
                 <div><a href="">Kya Meri Sonam Gupta Bewafa</a></div>
@@ -72,7 +72,7 @@ const Footer = () => {
              
          </div>
    
-         <div class="footer-col">
+         <div className="footer-col">
              <h3>Popular LIVE TV Channels</h3>
              
                 <div><a href="">Aaj Tak</a></div>
@@ -82,7 +82,7 @@ const Footer = () => {
                    <div><a href="">Zee Marathi HD</a></div>
              
          </div>
-         <div class="footer-col">
+         <div className="footer-col">
              <h3>Popular Web Series</h3>
              
                    <div><a href="">Sunflower</a></div>
@@ -92,7 +92,7 @@ const Footer = () => {
                    <div><a href="">Naxalbari</a></div>
              
          </div>
-         <div class="footer-col">
+         <div className="footer-col">
              <h3>Bollywood Top Celebrities</h3>
              
                 <div><a href="">Sunny Leone</a></div>
@@ -103,7 +103,7 @@ const Footer = () => {
                 
          </div>
      </div>
-    <div class="end">Best viewed on Google Chrome 80+, Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+
+    <div className="end">Best viewed on Google Chrome 80+, Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+
      Copyright © 2022 Zee Entertainment Enterprises Ltd. All rights reserved.</div>
  </div>
  </footer>
