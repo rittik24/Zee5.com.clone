@@ -1,6 +1,8 @@
 .payment-m{
     /* border: 5px solid red; */
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-color: #391b53;
+
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
