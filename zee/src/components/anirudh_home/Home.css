@@ -1,6 +1,6 @@
 .slide1{
     width: 100%;
-    height: 480px;
+    height: 500px;
 }
 
 .trend-container{
@@ -148,6 +148,7 @@
 .tvshow-products{
     width: 270px;
     height: 350px;
+    margin-top: 15px;
     background-color: #11051c;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
@@ -156,6 +157,18 @@
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+
+.news1{
+    width: 280px;
+    height: 250px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 1200px) {

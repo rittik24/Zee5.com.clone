@@ -16,6 +16,9 @@ import About from "../components/rittik_navbar/About";
 import Payment from "../components/moumita_buyplan/Payment";
 import Register from "../components/sajan_loginfooter/Register";
 import Reports from "../components/aniket_details/Reports";
+import Moviespage from "../components/anirudh_home/Moviespage";
+import WebSeriesPage from "../components/anirudh_home/WebSeriesPage";
+import Newspage from "../components/anirudh_home/Newspage";
 
 
 export default function AllRoutes() {
@@ -84,6 +87,9 @@ export default function AllRoutes() {
      
       <Route path="/About" element={<About />}></Route>
       <Route path="/tvshows" element={<TVShows />}></Route>
+      <Route path="/moviespage" element={<Moviespage />}></Route>
+      <Route path="/webseriespage" element={<WebSeriesPage />}></Route>
+      <Route path="/newspage" element={<Newspage />}></Route>
       <Route path="/subscription" element={<Buyplan />}></Route>
       <Route path="/subscription/payment" element={<Payment />}></Route>
 
