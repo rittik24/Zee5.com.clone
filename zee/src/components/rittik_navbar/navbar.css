@@ -32,6 +32,7 @@
     height: 40px;
     margin-right: 20px;
     margin-top: 15px;
+    /* border: 2px solid red; */
 }
 
 .navv-linkss a {
@@ -137,24 +138,23 @@
 .hum-link a p:hover {
     border-bottom: 2px solid white;
     padding-bottom: 3px;
-
 }
 
 
 @media screen and (max-width: 1200px) {
     .navv {
+       
         padding: 10px 15px;
         gap: 5px;
     }
-
     .navv-linkss {
         display: none;
     }
     .imgg {
         width: 80px;
         height: 40px;
-        /* margin-right: 20px; */
         margin-top: 15px;
+       z-index: 1;
     }
     .hum-Menu {
         color: white;
