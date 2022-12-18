@@ -6,8 +6,7 @@ import {
 } from "@chakra-ui/react"
 import "./navbar.css";
 import { Link } from 'react-router-dom'
-import { GiHamburgerMenu } from "react-icons/gi"
-
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const admin= [
   {
@@ -73,7 +72,6 @@ function Navbar() {
     localStorage.removeItem("token")
     setChange("")
   }
-  // change.includes("zee");
 
   return (
     <div className="navv">
@@ -90,10 +88,10 @@ function Navbar() {
       </div>
       <div className='navv-linkss' id="navv-link">
         <div className='input-div'>
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder='Search for Movies ,Shows etc..' />
+          <i className="fas fa-search"></i>
+          <input type="text" placeholder='Search for Movies ,Shows etc..'/>
         </div>
-        <i class="fas fa-download"></i>
+        <i className="fas fa-download"></i>
 
         <Box className="NavbarSecondPartV-Lan" ><Flex><Text>A</Text><Text className="NavbarSecondPartV-LanHindi">अ</Text></Flex> </Box>
         {change==undefined ? null: change.includes("zee") ? <Link to='/admindashboard'> <button className='admin-button'>ADMIN</button></Link> :
