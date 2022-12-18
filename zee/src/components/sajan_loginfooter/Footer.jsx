@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import {FaFacebookSquare,FaInstagramSquare,FaYoutube,FaTwitterSquare} from 'react-icons/fa';
 const Footer = () => {
   return (
     
@@ -22,10 +23,10 @@ const Footer = () => {
             <div class="leftlogo">
                 <h4>Connect with us</h4>
                 
-                <a href="https://www.facebook.com/ZEE5/" class="fb"><i class="fa-brands fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/zee5/" class="insta"><i class="fa-brands fa-instagram"></i></a> 
-                <a href="https://twitter.com/zee5india" class="twitter"><i class="fa-brands fa-twitter"></i></a> 
-                <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ" class="youtube"><i class="fa-brands fa-youtube"></i></a> 
+                <a href="https://www.facebook.com/ZEE5/" class="fb"> <FaFacebookSquare/></a>
+                <a href="https://www.instagram.com/zee5/" class="insta"><FaInstagramSquare/></a> 
+                <a href="https://twitter.com/zee5india" class="twitter"><FaTwitterSquare/></a> 
+                <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ" class="youtube"><FaYoutube/></a> 
                 
             </div>
         </div>

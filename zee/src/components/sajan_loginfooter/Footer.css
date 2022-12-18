@@ -1,7 +1,7 @@
 
 #footer{
     height: auto;
-    background-color: #0f0617;
+    /* background-color: #0f0617; */
     font-size: 12px;
     width: 80%;
     margin: auto;
@@ -17,6 +17,7 @@
 
 #footer p, .downloadApps{
     color: #ffffff;
+    font-weight: bold;
 }
 
 
@@ -25,6 +26,7 @@
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-between;
+    font-weight: bold;
     
 }
 .row > .footer-col{
@@ -110,8 +112,8 @@ footer h4{
     margin-top: 10px;
 }
 .leftlogo a{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color:rgb(37, 35, 35);
     border-radius: 50%;
     display: flex;
@@ -132,6 +134,7 @@ footer h4{
     cursor: pointer;
     
 }
+
 .leftlogo .insta:hover{
     background-color: rgb(211, 12, 128);
     cursor: pointer;
