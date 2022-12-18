@@ -38,7 +38,7 @@ function Navbar() {
         <Link to='/tvshows'><h4>TV Shows</h4></Link>
         <Link to='/moviespage'><h4>Movies</h4></Link>
         <Link to='/webseriespage'><h4>Web Series</h4></Link>
-        <Link to='/'><h4>News</h4></Link>
+        <Link to='/newspage'><h4>News</h4></Link>
       </div>
       <div className='navv-linkss' id="navv-link">
         <div className='input-div'>
@@ -66,7 +66,7 @@ function Navbar() {
                 <Link to="./tvshows"><p>TV Shows</p></Link>
                 <Link to="./moviespage"> <p>Movies</p></Link>
                 <Link to="./webseriespage"> <p>Web Series</p></Link>
-                <Link to="./"> <p>News</p></Link>
+                <Link to="./newspage"> <p>News</p></Link>
                 <Link to="./subscription"><p>Plan</p></Link>
                 <Link to="./About"><p>About Us</p></Link>
                 <p>Settings</p>
