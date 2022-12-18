@@ -29,11 +29,11 @@ function Navbar() {
 
   return (
     <div className="navv">
-     
-        <div className='imgg'>
-          <Link to='./'> <img src="https://scontent.fccu31-1.fna.fbcdn.net/v/t39.30808-6/319993825_849692672750825_2848840103300883038_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=Y5_7UGjMX9YAX_M-29r&_nc_ht=scontent.fccu31-1.fna&oh=00_AfC_kaxOBf8ldOkfYRVxDKnM7kirUAFSgeGXhTb-noANvw&oe=639DFE06" alt="ZeeApp Logo" className="nav-logo" /></Link>
-        </div>
-        <div className='navv-linkss' id="navv-links">
+
+      <div className='imgg'>
+        <Link to='./'> <img src="https://scontent.fccu31-1.fna.fbcdn.net/v/t39.30808-6/319993825_849692672750825_2848840103300883038_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=Y5_7UGjMX9YAX_M-29r&_nc_ht=scontent.fccu31-1.fna&oh=00_AfC_kaxOBf8ldOkfYRVxDKnM7kirUAFSgeGXhTb-noANvw&oe=639DFE06" alt="ZeeApp Logo" className="nav-logo" /></Link>
+      </div>
+      <div className='navv-linkss' id="navv-links">
         <Link to='/'><h4>Home</h4></Link>
         <Link to='/tvshows'><h4>TV Shows</h4></Link>
         <Link to='/moviespage'><h4>Movies</h4></Link>
@@ -53,6 +53,8 @@ function Navbar() {
         {/* <Link to='/login'><button className='login-button'>LOGIN</button></Link> */}
         <Link to='/login'><button className='login-button'>LOGIN</button></Link>
         <Link to='/subscription'><button className='buy-button'>BUY PLAN</button></Link>
+      </div>
+      <div className='hum'>
         <Flex alignItems="center" className="hum-Menu" >
           <Button colorScheme='blue' onClick={onOpen}>
             <GiHamburgerMenu />
@@ -77,6 +79,7 @@ function Navbar() {
           </Drawer>
         </Flex>
       </div>
+
     </div>
   )
 }
