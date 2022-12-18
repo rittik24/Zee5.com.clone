@@ -154,7 +154,7 @@
         width: 80px;
         height: 40px;
         margin-top: 15px;
-       
+       z-index: 1;
     }
     .hum-Menu {
         color: white;
