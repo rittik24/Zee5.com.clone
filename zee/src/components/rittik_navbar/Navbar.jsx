@@ -6,8 +6,7 @@ import {
 } from "@chakra-ui/react"
 import "./navbar.css";
 import { Link } from 'react-router-dom'
-import { GiHamburgerMenu } from "react-icons/gi"
-
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const admin= [
   {
@@ -70,8 +69,7 @@ function Navbar() {
     setNavs("none");
     setBarsIcon("block");
   }
-  
-  // change.includes("zee");
+
 
   return (
     <div className="navv">
@@ -89,7 +87,11 @@ function Navbar() {
       <div className='navv-linkss' id="navv-link">
         <div className='input-div'>
           <i className="fas fa-search"></i>
+
+          <input type="text" placeholder='Search for Movies ,Shows etc..'/>
+
           <input type="text" placeholder='Search for Movies ,Shows etc..' />
+
         </div>
         <i className="fas fa-download"></i>
 
