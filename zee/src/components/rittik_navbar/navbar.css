@@ -184,6 +184,10 @@
         gap: 10px;
         /* border: 2px solid red; */
     }
+    .login-button:hover {
+        background-color: white;
+        color: black;
+    }
     .input-div{
         display: none;
     }
@@ -232,6 +236,10 @@
         gap: 5px;
         /* border: 2px solid red; */
     }
+    .login-button:hover {
+        background-color: white;
+        color: black;
+    }
     .input-div{
         display: none;
     }
@@ -269,9 +277,30 @@
     .hum{
         margin-top: 10px;
     }
-   .navv-linkss{
+   .navv-linkss .NavbarSecondPartV-Lan{
     display: none;
    }
+   .navv-linkss .admin-button{
+    display: none;
+   }
+   .navv-linkss .buy-button{
+    display: none;
+   }
+   .navv-linkss .login-button{
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: rgb(15, 6, 23);
+    color: white;
+    border: 1px solid white;
+    font-weight: 200;
+    font-size: 10px;
+    /* margin-left: 5px; */
+    width: 40px;
+   }
+   .login-button:hover {
+    background-color: white;
+    color: black;
+}
    .input-div{
     display: none;
 }
