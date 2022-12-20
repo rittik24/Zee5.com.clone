@@ -83,7 +83,7 @@
     height: 200px;
     overflow-y: scroll;
     position: fixed;
-    left: 640px;
+    left: 47.5%;
     z-index: 5;
     border: none;
     top: 70px;
@@ -167,7 +167,9 @@
         align-items: center;
         justify-content: space-between;
     }
-
+.search-result{
+    display: none;
+}
     .navv-links {
         display: none;
     }
