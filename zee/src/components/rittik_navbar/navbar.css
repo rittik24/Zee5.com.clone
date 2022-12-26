@@ -167,9 +167,11 @@
         align-items: center;
         justify-content: space-between;
     }
-.search-result{
-    display: none;
-}
+
+    .search-result {
+        display: none;
+    }
+
     .navv-links {
         display: none;
     }

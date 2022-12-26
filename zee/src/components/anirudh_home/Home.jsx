@@ -280,8 +280,8 @@ const Home = () => {
                   <h3>{item.title}</h3>
                   <div >
                     <ul style={{ display: "flex", gap: "10px", listStyle:"none" }}>
-                    <li>Type: {item.type}</li>
-                    <li>Duration: {item.hrs}</li>
+                      <li>Type: {item.type}</li>
+                      <li>Duration: {item.hrs}</li>
                     </ul>
                   </div>
                 </div>

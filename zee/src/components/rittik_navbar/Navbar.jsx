@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { authContext } from '../../routs/AuthContext';
 import {
-  Box, Text, Flex, Button, Drawer, DrawerOverlay, DrawerContent,
-  DrawerHeader, DrawerBody, useDisclosure
+  Box, Text, Flex, Button, Drawer, DrawerOverlay, DrawerContent, DrawerBody, useDisclosure
 } from "@chakra-ui/react"
 import "./navbar.css";
 import { Link } from 'react-router-dom'
@@ -10,71 +9,21 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import zeelogo from "../../images/ZEEAPP.png"
 import axios from 'axios';
 
-const admin = [
-  {
-    "id": 1,
-    "type": "admin",
-    "_firstName": "Aniket",
-    "_lastName": "Pandey",
-    "email": "aniket.pandey@zee.com",
-    "token": "admin0001"
-  },
-  {
-    "id": 2,
-    "type": "admin",
-    "_firstName": "Anirudha",
-    "_lastName": "Mandal",
-    "email": "anirudha.mandal@zee.com",
-    "token": "admin0002"
-  },
-  {
-    "id": 3,
-    "type": "admin",
-    "_firstName": "Moumita",
-    "_lastName": "Das",
-    "email": "moumita.das@zee.com",
-    "token": "admin0003"
-  },
-  {
-    "id": 4,
-    "type": "admin",
-    "_firstName": "Ritik",
-    "_lastName": "Haldar",
-    "email": "ritik.haldar@zee.com",
-    "token": "admin0004"
-  },
-  {
-    "id": 5,
-    "type": "admin",
-    "_firstName": "Sajjan",
-    "_lastName": "Kumar",
-    "email": "sajjan.kumar@zee.com",
-    "token": "admin0005"
-  }
-]
-
 
 function Navbar() {
-  const [barsIcon, setBarsIcon] = useState("block");
-  const [navs, setNavs] = useState("none");
+
   const { isOpen, onOpen, onClose } = useDisclosure()
   const { state, handlelogout } = useContext(authContext);
   const [inputval, setInputval] = useState("");
   const [change, setChange] = useState([]);
+  const [dis, setDis] = useState(false);
   // console.log(change, token)
   // console.log(change)
   const handleChange = (e) => {
     setInputval(e.target.value)
+    setDis(false)
   }
-  function bars() {
-    setBarsIcon("none");
-    setNavs("flex");
 
-  }
-  function close() {
-    setNavs("none");
-    setBarsIcon("block");
-  }
   const fetchdata1 = () => {
     axios.get('https://mockdata.onrender.com/SearchData')
       .then((res) => setChange(res.data));
@@ -82,7 +31,12 @@ function Navbar() {
 
   useEffect(() => {
     fetchdata1()
-  }, [])
+  }, []);
+
+  const handleNone = () => {
+    setDis(true);
+    setInputval("");
+  }
 
 
   return (
@@ -102,7 +56,7 @@ function Navbar() {
 
         <div className='input-div'>
           {/* <i className="fas fa-search"></i> */}
-          <input type="text" placeholder='Search for Movies ,Shows etc..' onChange={(e) => handleChange(e)}  value={inputval}/>
+          <input type="text" placeholder='Search for Movies ,Shows etc..' onChange={(e) => handleChange(e)} value={inputval} />
 
         </div>
 
@@ -111,11 +65,11 @@ function Navbar() {
           {/* <i className="fas fa-download"></i> */}
 
           <Box className="NavbarSecondPartV-Lan" ><Flex><Text>A</Text><Text className="NavbarSecondPartV-LanHindi">अ</Text></Flex> </Box>
-          {state.isAuth == false ? null : state.token.includes("zee") ? <Link to='/admindashboard'> <button className='admin-button'>ADMIN</button></Link> :
+          {state.isAuth === false ? null : state.token.includes("zee") ? <Link to='/admindashboard'> <button className='admin-button'>ADMIN</button></Link> :
             <Link to='/userdashboard'> <button className='admin-button'>USER</button></Link>}
 
 
-          {state.isAuth == true ? <Link to='/login'><button className='login-button' onClick={handlelogout}>LOGOUT</button></Link> : <Link to='/login'><button className='login-button'>LOGIN </button></Link>}
+          {state.isAuth === true ? <Link to='/login'><button className='login-button' onClick={handlelogout}>LOGOUT</button></Link> : <Link to='/login'><button className='login-button'>LOGIN </button></Link>}
 
           <Link to='/subscription'><button className='buy-button'>BUY PLAN</button></Link>
         </div>
@@ -146,9 +100,9 @@ function Navbar() {
           </Flex>
         </div>
       </div>
-    {inputval && <div className='search-result' >
-      {change && change.filter(el => el.title.toLowerCase().includes(inputval.toLowerCase()) ).map(ele => <p>{ele.title}</p> )}
-    </div>}
+      {inputval && <div className='search-result' style={{ display: dis === true ? 'none' : '' }} >
+        {change && change.filter(el => el.title.toLowerCase().includes(inputval.toLowerCase())).map(ele => <Link to={`/Search/${ele.id}`}><p onClick={handleNone} style={{ padding: "10px" }}>{ele.title}</p></Link>)}
+      </div>}
     </>
   )
 }
