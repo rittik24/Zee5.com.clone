@@ -144,32 +144,21 @@
 
 
 
-
-
-
 import React, { useState } from "react";
 import "./Buyplan.css";
-import { AiOutlineCheck, AiOutlineCloseSquare } from "react-icons/ai";
+import { AiOutlineCheck } from "react-icons/ai";
 import { CiPercent } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { Center } from "@chakra-ui/react";
 
 const Buyplan = () => {
-  const [modal, setModal] = useState(false);
-
-  const toggleModal = () => {
-    setModal(!modal);
-  };
-
-  if(modal) {
-    document.body.classList.add('active-modal')
-  } else {
-    document.body.classList.remove('active-modal')
-  }
 
   return (
+    <Center>
     <div className="headb">
       <div className="mainb">
         <h1 className="pln">Choose your premium plan</h1>
+  
         <div className="mainbob">
           <div className="boxb">
             {/* 1st */}
@@ -254,25 +243,7 @@ const Buyplan = () => {
           {/* apply */}
           <div className="applyb">
             <CiPercent />
-            <p >Apply code</p>
-            <button style={{backgroundColor:"#8230C6",color:"black",padding:"5px 15px",borderRadius:"0px",marginLeft:"340px"}} className='btn-p , btn-modal' onClick={toggleModal}>code</button>
-            {modal && (
-        <div className="modal">
-          <div onClick={toggleModal} className="overlay"></div>
-          <div className="modal-content">
-            <h2>Enter Code</h2>
-            <input type="number" name="" id="" placeholder='enter your code here' className='input-pay' style={{color:"black"}}  />
-            {/* <hr /> */}
-
-            <p>.</p>
-            <button  onClick={toggleModal} style={{backgroundColor:"#8230C6",color:"black",padding:"5px 10px",borderRadius:"0px"}}>Apply</button>
-            {/* <AiOutlineCloseSquare className="close-modal" onClick={toggleModal}/> */}
-            <button className="close-modal" onClick={toggleModal}>
-              CLOSE
-            </button>
-          </div>
-        </div>
-      )}
+            <p>Apply code</p>
           </div>
 
           <p style={{ color: "#a4a0a0dc" }}>
@@ -296,6 +267,7 @@ const Buyplan = () => {
           </div>
         </div>
 
+
         <div></div>
       </div>
       {/* <hr/> */}
@@ -313,7 +285,24 @@ const Buyplan = () => {
         </div>
       </div>
     </div>
+    </Center>
   );
 };
 
 export default Buyplan;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
