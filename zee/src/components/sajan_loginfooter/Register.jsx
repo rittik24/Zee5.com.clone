@@ -22,7 +22,7 @@ const Register =() => {
     }
     catch(err){
 
-          alert(err.message)
+          alert(err.code)
     }
     
   }

@@ -20,6 +20,7 @@ import Moviespage from "../components/anirudh_home/Moviespage";
 import WebSeriesPage from "../components/anirudh_home/WebSeriesPage";
 import Newspage from "../components/anirudh_home/Newspage";
 import PrivateRoute from "./PrivateRoute";
+import SearchDemo from "../components/anirudh_home/SearchDemo";
 
 
 export default function AllRoutes() {
@@ -28,6 +29,7 @@ export default function AllRoutes() {
   const [dramas, setDramas] = useState([]);
   const [webSeries, setWebSeries] = useState([]);
   const [trending, setTrending] = useState([]);
+  const [search, setSearch] = useState([]);
 
   const fetchdata1 = () => {
     axios
@@ -49,6 +51,9 @@ export default function AllRoutes() {
     axios
       .get("https://mockdata.onrender.com/WebSeries")
       .then((res) => setWebSeries(res.data));
+
+    axios.get('https://mockdata.onrender.com/SearchData')
+      .then((res) => setSearch(res.data));
   };
 
   useEffect(() => {
@@ -79,12 +84,13 @@ export default function AllRoutes() {
         path="/trendingdemo/:Id"
         element={<TrendingDemo data={trending} />}
       ></Route>
+      <Route path='/Search/:Id' element={<SearchDemo data={search} />}></Route>
       <Route path="/userdashboard" element={<PrivateRoute><UserDashboard /></PrivateRoute>}></Route>
       <Route path="/admindashboard" element={<PrivateRoute><AdminDashboard /></PrivateRoute>}></Route>
-      <Route  path="/register" element={<Register/>}></Route>
-      
+      <Route path="/register" element={<Register />}></Route>
+
       <Route path="/admindashboard/admins" element={<Reports />}></Route>
-     
+
       <Route path="/About" element={<About />}></Route>
       <Route path="/tvshows" element={<TVShows />}></Route>
       <Route path="/moviespage" element={<Moviespage />}></Route>
@@ -96,3 +102,4 @@ export default function AllRoutes() {
     </Routes>
   );
 }
+
