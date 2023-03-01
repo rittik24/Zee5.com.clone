@@ -1,7 +1,13 @@
 # Zee5.com clone
+Team Member:-
+- Rittik Haldar
+- Anirudha Mandal
+- Aniket Pandey
+- Moumita Das
+- Sajan Kumar
+
 
 used language:-
-
 - React
 - Javascript
 - HTML
@@ -23,9 +29,4 @@ used language:-
 - Buynow plan
 
 
-Team Member:-
-- Rittik Haldar
-- Anirudha Mandal
-- Aniket Pandey
-- Moumita Das
-- Sajan Kumar
+
